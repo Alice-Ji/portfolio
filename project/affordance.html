@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+      href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <meta charset="UTF-8" />
+    <title>Alice Ji – Portfolio</title>
+    <meta
+      name="description"
+      content="Portfolio of Alice Ji. A showcase of projects bridging research and industry applications."
+    />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <link rel="stylesheet" href="../styles.css" />
+    <link
+      rel="icon"
+      href="https://alice-ji.github.io/portfolio/assets/favicon.png"
+      type="image/png"
+    />
+  </head>
+  <body>
+    <nav class="navbar">
+      <a href="/">
+        <img
+          src="https://alice-ji.github.io/portfolio/assets/favicon.png"
+          style="width: 24px; height: 24px;"
+        />
+      </a>
+      <a href="/" class="nav-link">Home</a>
+      <button id="dark-toggle" class="dark-toggle">🌒 Dark Mode</button>
+    </nav>
+
+    <a href="/" id="back-btn" title="Back to portfolio">
+      &#8678; Back
+    </a>
+
+    <main>
+
+        <section class="case-study">
+
+            <header class="case-header">
+              <figure>
+                <img src="https://alice-ji.github.io/portfolio/assets/affordance-card.png" />
+              </figure>
+          
+              <h1>When Social Features Drive Influencer Conversions</h1>
+          
+              <p class="subtitle">
+                A causal study testing how platform affordances 
+                strengthen-or break—the link between influencer relationships and purchase intent.
+              </p>
+          
+              <div class="case-meta">
+                <p><strong>Role:</strong> Quantitative Researcher, UX Prototyper</p>
+                <p><strong>Methods:</strong> Randomized Controlled Experiment, Structural Equation Modeling</p>
+                <p><strong>Tools:</strong> Figma, HTML, JavaScript, React, Qualtrics, R (lavaan)</p>
+                <p><strong>Focus:</strong> Social commerce, platform affordances, influencer advertising</p>
+              </div>
+            </header>
+          
+            <section class="case-glance">
+              <h2>At a Glance</h2>
+              <ul>
+                <li>Built a fully functional Instagram-like feed to test platform affordances</li>
+                <li>Randomly removed the comment feature for half of participants</li>
+                <li>Measured how emotional connection translated into purchase intent</li>
+                <li>Used SEM to identify which psychological pathways broke when comments disappeared</li>
+              </ul>
+            </section>
+          
+            <section class="case-narrative">
+              <h2>Full Case Narrative</h2>
+          
+              <p>
+                Social platforms routinely experiment with hiding or removing engagement features to
+                simplify interfaces or reduce toxicity. But these features are more than surface-level
+                UI elements, they may quietly structure how emotional connection turns into action.
+              </p>
+          
+              <p>
+                This project asks a deceptively simple question:
+                <strong>what happens to influencer persuasion when the comment button disappears?</strong>
+                Not hypothetically, but in a controlled environment where everything else stays the same.
+              </p>
+          
+              <p>
+                As part of my dissertation research, I built a realistic Instagram-like platform and ran
+                a large-scale experiment to isolate the psychological role comments play in influencer
+                advertising.
+              </p>
+            </section>
+          
+            <section class="case-question">
+              <h2>Research Question</h2>
+              <p>
+                How does removing the comment affordance alter the psychological pathway from
+                influencer exposure to purchase intent?
+              </p>
+              <ul>
+                <li>Do comments increase trust or emotional closeness?</li>
+                <li>Do comments change whether those feelings translate into buying behavior?</li>
+                <li>Which parts of the influence journey depend on social affordances?</li>
+              </ul>
+            </section>
+          
+            <section class="case-design">
+              <h2>Study Design</h2>
+          
+              <figure>
+                <img src="https://alice-ji.github.io/portfolio/assets/affordance-procedure.png" />
+              </figure>
+          
+              <p>
+                I designed a randomized controlled experiment using a high-fidelity social media prototype.
+                Participants were randomly assigned to one of two platform conditions:
+              </p>
+          
+              <ol>
+                <li><strong>Comments ON:</strong> Likes and comments enabled</li>
+                <li><strong>Comments OFF:</strong> Likes enabled, comments removed</li>
+              </ol>
+          
+              <p>
+                All other elements (content, layout, influencers, and ads) were held constant.
+                Participants browsed the feed naturally for eight minutes, followed by exposure
+                to a sponsored influencer post.
+              </p>
+          
+              <p>
+                Behind the scenes, the system logged scrolling behavior, clicks, dwell time,
+                and interaction patterns.
+              </p>
+            </section>
+          
+            <section class="case-methods">
+              <h2>Methods & Analysis</h2>
+          
+              <ul>
+                <li><strong>Sample:</strong> 330 participants, randomized assignment</li>
+                <li><strong>Stimuli:</strong> Real posts from two virtual influencers (Rozy, Imma)</li>
+                <li><strong>Measures:</strong> Parasocial interaction, trust, authenticity, product interest, purchase intent</li>
+                <li><strong>Analysis:</strong> Structural Equation Modeling (SEM) in R (<code>lavaan</code>)</li>
+              </ul>
+          
+              <p>
+                SEM was used to model the full psychological pathway from platform affordance
+                to emotional response to purchase intention, allowing direct comparison of
+                which links were present or absent across conditions.
+              </p>
+            </section>
+          
+            <section class="case-findings">
+              <h2>Key Findings</h2>
+          
+              <figure>
+                <img src="https://alice-ji.github.io/portfolio/assets/affordance-result.png" />
+              </figure>
+          
+              <h3>1. Removing comments did not reduce liking or trust</h3>
+              <p>
+                At a surface level, participants formed similar levels of trust and emotional
+                connection with influencers whether comments were present or not.
+              </p>
+          
+              <p>
+                If measured only through mean differences, comments appeared to “not matter.”
+              </p>
+          
+              <h3>2. Comments determine whether emotional connection converts</h3>
+              <p>
+                Structural equation modeling revealed a critical difference in pathway structure.
+              </p>
+          
+              <ul>
+                <li><strong>Comments ON:</strong> Emotional closeness and trust strongly predicted purchase intent</li>
+                <li><strong>Comments OFF:</strong> Those same feelings no longer translated into buying consideration</li>
+              </ul>
+          
+              <p>
+                The emotional bond did not disappear. But it stopped functioning as a driver of action.
+              </p>
+          
+              <h3>3. Comments act as a bridge, not an amplifier</h3>
+              <p>
+                Comments did not increase trust or closeness directly. Instead, they enabled
+                those feelings to carry weight in decision-making.
+              </p>
+
+              <h3>4. Some breaks in the journey are structural, not visible</h3>
+
+              <p>
+                Traditional engagement metrics and surface-level journey maps suggested
+                the experience was largely unchanged when comments were removed.
+                However, modeling the full influence pathway revealed a hidden break:
+                emotional connection no longer translated into purchase intent.
+              </p>
+
+              <p>
+                This highlights an important insight for product teams:
+                some UX changes do not alter how users feel or behave moment-to-moment,
+                but quietly rewire which emotions actually drive outcomes.
+              </p>
+
+              <p>
+                By modeling the full psychological pathway rather than isolated metrics,
+                this analysis revealed a structural break in the user journey that
+                traditional engagement measures would have missed.
+              </p>
+            </section>
+
+          
+            <section class="case-interpretation">
+              <h2>Interpretation</h2>
+          
+              <p>
+                Comment sections function as psychological infrastructure. They signal social
+                presence, reciprocity, and legitimacy, and allows parasocial feelings to convert
+                into behavioral intent.
+              </p>
+          
+              <p>
+                When that signal is removed, influence becomes emotionally intact but behaviorally inert.
+              </p>
+            </section>
+          
+            <section class="case-implications">
+              <h2>Design Implications for Social Platforms</h2>
+              <ul>
+                <li>Engagement features shape emotional flow, not just interaction metrics</li>
+                <li>Removing features can preserve UX simplicity while breaking conversion pathways</li>
+                <li>Trust does not automatically translate into action without social affordances</li>
+                <li>Platform toggles act as logic gates in the persuasion process</li>
+              </ul>
+            </section>
+          
+            <section class="case-conclusion">
+              <h2>Why This Matters</h2>
+          
+              <p>
+                This study shows how small interface changes can quietly rewire influence without
+                changing what users consciously notice.
+              </p>
+          
+              <p>
+                By combining journey thinking with causal pathway modeling, designers can identify
+                both where experiences feel different — and where 
+                <strong>influence breaks structurally</strong>.
+              </p>
+          
+              <p>
+                Sometimes, removing one button doesn’t damage the experience.
+                It just disconnects emotion from action.
+              </p>
+            </section>
+          
+          </section>
+
+      <section class="contact-section">
+        <a href="mailto:rji3@illinois.edu" class="contact-email"
+          >rji3@illinois.edu</a
+        >
+        <div class="social-links">
+          <a
+            href="https://www.linkedin.com/in/alice-ji-8a4b2a161/"
+            target="_blank"
+          >
+            <img
+              src="https://alice-ji.github.io/portfolio/assets/LinkedIn.png"
+              alt="LinkedIn"
+              title="LinkedIn"
+            />
+          </a>
+          <a
+            href="https://scholar.google.com/citations?hl=en&user=CVlgqCAAAAAJ"
+            target="_blank"
+          >
+            <img
+              src="https://alice-ji.github.io/portfolio/assets/GoogleScholarLogo.png"
+              alt="Google Scholar"
+              title="Google Scholar"
+            />
+          </a>
+          <a href="https://orcid.org/0009-0009-3730-8272" target="_blank">
+            <img
+              src="https://alice-ji.github.io/portfolio/assets/ORCID.png"
+              alt="ORCID"
+              title="ORCID"
+            />
+          </a>
+          <a href="https://github.com/Alice-Ji" target="_blank">
+            <img
+              src="https://alice-ji.github.io/portfolio/assets/github.png"
+              alt="Github"
+              title="Github"
+            />
+          </a>
+          <a href="https://medium.com/@alice-ji" target="_blank">
+            <img
+              src="https://alice-ji.github.io/portfolio/assets/medium.png"
+              alt="Medium"
+              title="Medium"
+            />
+          <a href="https://madlabresearch.web.illinois.edu/" target="_blank">
+            <img
+              src="https://alice-ji.github.io/portfolio/assets/madlab.png"
+              alt="MadLab"
+              title="MadLab"
+            />
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <footer>&copy; 2026 Alice Ji</footer>
+
+    <script>
+      const btn = document.getElementById("dark-toggle");
+      if (localStorage.getItem("dark-mode") === "true") {
+        document.body.classList.add("dark-mode");
+        btn.textContent = "☀️ Light Mode";
+      }
+      btn.onclick = () => {
+        document.body.classList.toggle("dark-mode");
+        const enabled = document.body.classList.contains("dark-mode");
+        btn.textContent = enabled ? "☀️ Light Mode" : "🌒 Dark Mode";
+        localStorage.setItem("dark-mode", enabled);
+      };
+    </script>
+  </body>
+</html>

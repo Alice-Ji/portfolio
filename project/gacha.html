@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+      href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <meta charset="UTF-8" />
+    <title>Alice Ji – Portfolio</title>
+    <meta
+      name="description"
+      content="Portfolio of Alice Ji. A showcase of projects bridging research and industry applications."
+    />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <link rel="stylesheet" href="../styles.css" />
+    <link
+      rel="icon"
+      href="https://alice-ji.github.io/portfolio/assets/favicon.png"
+      type="image/png"
+    />
+  </head>
+  <body>
+    <nav class="navbar">
+      <a href="/">
+        <img
+          src="https://alice-ji.github.io/portfolio/assets/favicon.png"
+          style="width: 24px; height: 24px;"
+        />
+      </a>
+      <a href="/" class="nav-link">Home</a>
+      <button id="dark-toggle" class="dark-toggle">🌒 Dark Mode</button>
+    </nav>
+
+    <a href="/" id="back-btn" title="Back to portfolio">
+      &#8678; Back
+    </a>
+    
+    <main>
+        <section class="case-study">
+
+  <header class="case-header">
+    <figure>
+      <img src="https://alice-ji.github.io/portfolio/assets/gacha-card.png" alt="Gacha Behavioral Economies hero image" />
+    </figure>
+
+    <h1>Gacha Behavioral Economics</h1>
+
+    <p class="subtitle">
+      A modular experimental platform for studying player behavior and monetization in randomized reward systems
+    </p>
+
+    <div class="case-meta">
+      <p><strong>Role:</strong> Research Prototyper</p>
+      <p><strong>What I Built:</strong> Instrumented gacha + battle + economy testbed (HTML/JavaScript)</p>
+      <p><strong>Methods:</strong> Experimental design, telemetry logging, A/B configuration of mechanics</p>
+      <p><strong>Tools:</strong> Figma, Photoshop, HTML/CSS/JS, Google Apps Script, Google Sheets, R/Python (analysis-ready logs)</p>
+      <p><strong>Focus:</strong> Choice architecture, reward uncertainty, pricing & framing, progression pressure</p>
+    </div>
+  </header>
+
+  <section class="case-glance">
+    <h2>At a Glance</h2>
+    <ul>
+      <li>Built a <strong>fully functional gacha battle game</strong> as a reusable research instrument (not a one-off game concept)</li>
+      <li>Separated content assets from mechanics so experiments can be reconfigured quickly</li>
+      <li>Logged event-level behavioral telemetry (pulls, spending, progression, outcomes) for analysis</li>
+      <li>Designed the platform to test how odds, pricing, bonuses, and framing shift trust and monetization patterns</li>
+    </ul>
+  </section>
+
+  <video width="100%" autoplay muted loop>
+    <source
+      src="https://alice-ji.github.io/portfolio/assets/gacha-demo2.mp4"
+      type="video/mp4"
+    />
+    Your browser does not support the video tag.
+  </video>
+
+  <section class="case-narrative">
+    <h2>What This Is (and Isn’t)</h2>
+
+    <p>
+      Mobile games increasingly rely on gacha mechanics such as randomized rewards, limited-time banners,
+      variable odds, and currency bundles. While these systems are widely used, it is often unclear which
+      specific design variables drive spending, which ones shape player trust, and how progression pressure
+      interacts with randomness over time.
+    </p>
+    
+    <p>
+      This project did not begin as a game concept or a monetization redesign. It began as a question about
+      how gacha systems could be studied in a controlled way. Rather than starting from screens or aesthetics,
+      I first decomposed the system into core mechanics including summoning, economy, progression, battle,
+      and instrumentation.
+    </p>
+    
+    <p>
+      From there, I mapped a minimal behavioral loop and built a working prototype that preserves the feel
+      of a real gacha game while exposing its mechanics as adjustable parameters. The result is a modular,
+      instrumented platform that can be reused across experiments by swapping assets, tuning odds, and
+      reconfiguring progression without rebuilding the product.
+    </p>
+
+    <figure>
+      <img src="https://alice-ji.github.io/portfolio/assets/gacha-flow.png" alt="Prototype">
+      <figcaption>Prototyping Workflow</figcaption>
+    </figure>
+    
+  </section>
+
+  <section class="case-question">
+    <h2>Research Questions This Platform Enables</h2>
+    <ul>
+      <li>How do pull odds and banner framing change spending acceleration and retention?</li>
+      <li>Do bundle offers (e.g., 10-pull) create completion bias or perceived value effects?</li>
+      <li>How do bonus gems, endowment effects, and USD → currency ratios shape purchase intent?</li>
+      <li>When does randomness feel fun vs unfair, and how does perceived fairness affect trust?</li>
+      <li>How does progression pressure change risk-taking and willingness to spend?</li>
+    </ul>
+  </section>
+
+  <section class="case-design">
+    <h2>Platform Capabilities</h2>
+
+    <div class="case-grid" style="display:grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap:16px;">
+      <div class="case-card" style="padding:16px; border-radius:14px; border:1px solid var(--divider, rgba(0,0,0,0.08)); background: var(--card, #fff);">
+        <h3>Summoning System</h3>
+        <ul>
+          <li>Configurable rarity tables and drop rates</li>
+          <li>Single pull vs ten-pull mechanics</li>
+          <li>Optional guarantees / pity rules / bonus logic</li>
+          <li>Banner messaging and visual framing can be varied by condition</li>
+        </ul>
+      </div>
+
+      <div class="case-card" style="padding:16px; border-radius:14px; border:1px solid var(--divider, rgba(0,0,0,0.08)); background: var(--card, #fff);">
+        <h3>Battle & Progression Loop</h3>
+        <ul>
+          <li>Players use summoned characters in battles</li>
+          <li>Battle outcomes affect progression and resource needs</li>
+          <li>Creates realistic pressure to optimize roster and power</li>
+        </ul>
+      </div>
+
+      <div class="case-card" style="padding:16px; border-radius:14px; border:1px solid var(--divider, rgba(0,0,0,0.08)); background: var(--card, #fff);">
+        <h3>Economy Controls</h3>
+        <ul>
+          <li>Adjustable USD → in-game currency exchange</li>
+          <li>Configurable pricing, bundles, and bonus currency</li>
+          <li>Supports endowment bonuses and “free currency” framing</li>
+        </ul>
+      </div>
+
+      <div class="case-card" style="padding:16px; border-radius:14px; border:1px solid var(--divider, rgba(0,0,0,0.08)); background: var(--card, #fff);">
+        <h3>Instrumentation</h3>
+        <ul>
+          <li>Event-level logs for every key action</li>
+          <li>Timestamped state: currency, inventory, power, level</li>
+          <li>Analysis-ready output via Apps Script → Sheets</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="case-methods">
+    <h2>Designed for Reuse & Reconfiguration</h2>
+
+    <p>
+      Modularity is a first-class feature. The platform separates content(character art, names, rarity sets)
+      from mechanics (odds, pricing, progression tuning, banner framing), allowing rapid iteration between
+      experimental conditions.
+    </p>
+
+    <ul>
+      <li><strong>Asset-agnostic:</strong> swap character sets (e.g., original cards, rarity-tiered character collections, abstract icons) without rewriting logic</li>
+      <li><strong>Mechanics-agnostic:</strong> adjust odds, bundle structures, and guarantees via configuration</li>
+      <li><strong>Economy-agnostic:</strong> change currency pricing and exchange rates independently of gacha logic</li>
+      <li><strong>Condition-ready:</strong> supports controlled manipulations (banner copy, odds visibility, bonus framing)</li>
+    </ul>
+
+    <p style="margin-top:10px;">
+      This makes it a reusable testbed for behavioral economics and game UX research—not a single “finished” design.
+    </p>
+  </section>
+
+  <section class="case-findings">
+    <h2>Behavioral Telemetry</h2>
+
+    <p>
+      The platform captures behavioral traces at the action level (summoning, spending, battles, and progression).
+      This enables analysis of decision sequences and spending trajectories in addition to post-hoc self-report.
+    </p>
+
+    <div style="overflow:auto; border:1px solid var(--divider, rgba(0,0,0,0.08)); border-radius:12px;">
+      <table style="width:100%; border-collapse:collapse; min-width:900px; background: var(--card, #fff);">
+        <thead>
+          <tr style="text-align:left; background: rgba(0,0,0,0.03);">
+            <th style="padding:10px; border-bottom:1px solid rgba(0,0,0,0.08);">playerId</th>
+            <th style="padding:10px; border-bottom:1px solid rgba(0,0,0,0.08);">timestamp</th>
+            <th style="padding:10px; border-bottom:1px solid rgba(0,0,0,0.08);">action</th>
+            <th style="padding:10px; border-bottom:1px solid rgba(0,0,0,0.08);">data</th>
+            <th style="padding:10px; border-bottom:1px solid rgba(0,0,0,0.08);">level</th>
+            <th style="padding:10px; border-bottom:1px solid rgba(0,0,0,0.08);">battlePower</th>
+            <th style="padding:10px; border-bottom:1px solid rgba(0,0,0,0.08);">tenPulls</th>
+            <th style="padding:10px; border-bottom:1px solid rgba(0,0,0,0.08);">addCurrencyUsed</th>
+            <th style="padding:10px; border-bottom:1px solid rgba(0,0,0,0.08);">currencyLeft</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td style="padding:10px; border-bottom:1px solid rgba(0,0,0,0.06);">Alice</td>
+            <td style="padding:10px; border-bottom:1px solid rgba(0,0,0,0.06);">2025-10-27T02:48:20.843Z</td>
+            <td style="padding:10px; border-bottom:1px solid rgba(0,0,0,0.06);">10_pull</td>
+            <td style="padding:10px; border-bottom:1px solid rgba(0,0,0,0.06); white-space:nowrap; overflow:hidden; text-overflow:ellipsis; max-width:280px;">
+              {"cards":[{"name":"Iris Frog","rarity":"common"},...]}
+            </td>
+            <td style="padding:10px; border-bottom:1px solid rgba(0,0,0,0.06);">1</td>
+            <td style="padding:10px; border-bottom:1px solid rgba(0,0,0,0.06);">96</td>
+            <td style="padding:10px; border-bottom:1px solid rgba(0,0,0,0.06);">1</td>
+            <td style="padding:10px; border-bottom:1px solid rgba(0,0,0,0.06);">0</td>
+            <td style="padding:10px; border-bottom:1px solid rgba(0,0,0,0.06);">0</td>
+          </tr>
+
+          <tr>
+            <td style="padding:10px; border-bottom:1px solid rgba(0,0,0,0.06);">Alice</td>
+            <td style="padding:10px; border-bottom:1px solid rgba(0,0,0,0.06);">2025-10-27T02:48:27.260Z</td>
+            <td style="padding:10px; border-bottom:1px solid rgba(0,0,0,0.06);">add_currency</td>
+            <td style="padding:10px; border-bottom:1px solid rgba(0,0,0,0.06); white-space:nowrap; overflow:hidden; text-overflow:ellipsis; max-width:280px;">
+              {"amount":100,"newBalance":200,"timesUsed":2}
+            </td>
+            <td style="padding:10px; border-bottom:1px solid rgba(0,0,0,0.06);">1</td>
+            <td style="padding:10px; border-bottom:1px solid rgba(0,0,0,0.06);">96</td>
+            <td style="padding:10px; border-bottom:1px solid rgba(0,0,0,0.06);">1</td>
+            <td style="padding:10px; border-bottom:1px solid rgba(0,0,0,0.06);">2</td>
+            <td style="padding:10px; border-bottom:1px solid rgba(0,0,0,0.06);">200</td>
+          </tr>
+
+          <tr>
+            <td style="padding:10px;">Alice</td>
+            <td style="padding:10px;">2025-10-27T02:48:37.189Z</td>
+            <td style="padding:10px;">10_pull</td>
+            <td style="padding:10px; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; max-width:280px;">
+              {"cards":[{"name":"Camellia Countess","rarity":"legendary"},...]}
+            </td>
+            <td style="padding:10px;">1</td>
+            <td style="padding:10px;">208</td>
+            <td style="padding:10px;">2</td>
+            <td style="padding:10px;">5</td>
+            <td style="padding:10px;">400</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <p style="margin-top:10px; color: var(--text-muted, #666);">
+      Note: The platform logs full inventory state and pull composition; the table above is a condensed excerpt for readability.
+    </p>
+  </section>
+
+  <section class="case-implications">
+    <h2>Why This Matters</h2>
+    <p>
+      Gacha economies are often tuned post-launch using observational analytics, which makes it hard to separate
+      causality (what <em>causes</em> spending) from correlation (what <em>co-occurs</em> with spending).
+    </p>
+    <p>
+      This platform enables <strong>controlled, experimental testing</strong> of monetization and reward mechanics before deployment,
+      supporting evidence-based design decisions that balance engagement with transparency and trust.
+    </p>
+  </section>
+
+  <section class="case-conclusion">
+    <h2>Key Takeaway</h2>
+    <p>
+      This project is a reusable testbed for studying how randomized reward systems shape behavior, built to be
+      modular “to a fault,” so designers and researchers can swap assets, tune odds, change currency ratios,
+      and run new conditions without rebuilding the product each time.
+    </p>
+
+    <p>
+    View
+     <a href="https://github.com/Alice-Ji/Gacha" target="_blank">Github Repo</a>
+    &
+    <a href="https://alice-ji.github.io/Gacha/index.html" target="_blank">Prototype</a>.
+    </p>
+  </section>
+
+</section>
+         
+
+
+      <section class="contact-section">
+        <a href="mailto:rji3@illinois.edu" class="contact-email"
+          >rji3@illinois.edu</a
+        >
+        <div class="social-links">
+          <a
+            href="https://www.linkedin.com/in/alice-ji-8a4b2a161/"
+            target="_blank"
+          >
+            <img
+              src="https://alice-ji.github.io/portfolio/assets/LinkedIn.png"
+              alt="LinkedIn"
+              title="LinkedIn"
+            />
+          </a>
+          <a
+            href="https://scholar.google.com/citations?hl=en&user=CVlgqCAAAAAJ"
+            target="_blank"
+          >
+            <img
+              src="https://alice-ji.github.io/portfolio/assets/GoogleScholarLogo.png"
+              alt="Google Scholar"
+              title="Google Scholar"
+            />
+          </a>
+          <a href="https://github.com/Alice-Ji" target="_blank">
+            <img
+              src="https://alice-ji.github.io/portfolio/assets/github.png"
+              alt="Github"
+              title="Github"
+            />
+          </a>
+          <a href="https://medium.com/@alice-ji" target="_blank">
+            <img
+              src="https://alice-ji.github.io/portfolio/assets/medium.png"
+              alt="Medium"
+              title="Medium"
+            />
+          <a href="https://madlabresearch.web.illinois.edu/" target="_blank">
+            <img
+              src="https://alice-ji.github.io/portfolio/assets/madlab.png"
+              alt="MadLab"
+              title="MadLab"
+            />
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <footer>&copy; 2026 Alice Ji</footer>
+
+    <script>
+      const btn = document.getElementById("dark-toggle");
+      if (localStorage.getItem("dark-mode") === "true") {
+        document.body.classList.add("dark-mode");
+        btn.textContent = "☀️ Light Mode";
+      }
+      btn.onclick = () => {
+        document.body.classList.toggle("dark-mode");
+        const enabled = document.body.classList.contains("dark-mode");
+        btn.textContent = enabled ? "☀️ Light Mode" : "🌒 Dark Mode";
+        localStorage.setItem("dark-mode", enabled);
+      };
+    </script>
+  </body>
+</html>

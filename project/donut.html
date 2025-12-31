@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+      href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <meta charset="UTF-8" />
+    <title>Alice Ji – Portfolio</title>
+    <meta
+      name="description"
+      content="Portfolio of Alice Ji. A showcase of projects bridging research and industry applications."
+    />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <link rel="stylesheet" href="../styles.css" />
+    <link
+      rel="icon"
+      href="https://alice-ji.github.io/portfolio/assets/favicon.png"
+      type="image/png"
+    />
+  </head>
+  <body>
+    <nav class="navbar">
+      <a href="/">
+        <img
+          src="https://alice-ji.github.io/portfolio/assets/favicon.png"
+          style="width: 24px; height: 24px;"
+        />
+      </a>
+      <a href="/" class="nav-link">Home</a>
+      <button id="dark-toggle" class="dark-toggle">🌒 Dark Mode</button>
+    </nav>
+
+    <a href="/" id="back-btn" title="Back to portfolio">
+      &#8678; Back
+    </a>
+    
+    <main>
+
+        <section class="case-study">
+
+            <header class="case-header">
+                <figure>
+                    <img
+                      src="https://alice-ji.github.io/portfolio/assets/donut-card.png"
+                    />
+                  </figure>    
+              <h1>Donut Shop Ordering App</h1>
+          
+              <p class="subtitle">
+                A UX case study conducted in partnership with a local food business, 
+                designing and validating an MVP mobile ordering experience to 
+                reduce decision paralysis in highly customizable ordering 
+                through choice architecture, behavioral design, and streamlined user flows.
+              </p>
+          
+              <div class="case-meta">
+                <p><strong>Context:</strong> Local food business (in-store + mobile ordering)</p>
+                <p><strong>Role:</strong> UX Researcher, Product Designer, Prototyper</p>
+                <p><strong>Methods:</strong> Field observation, informal interviews, behavioral theory</p>
+                <p><strong>Tools:</strong> Figma, Photoshop, HTML, CSS, JavaScript, React, Netlify</p>
+                <p><strong>Focus:</strong> Choice architecture, decision fatigue, user delight</p>
+                <p><strong>Constraints:</strong> Small business budget, rapid iteration, real-world deployment</p>
+              </div>
+            </header>
+          
+            <section class="case-glance">
+                <h2>At a Glance</h2>
+                <ul>
+                  <li>Identified decision paralysis and friction points through in-context behavioral observation</li>
+                  <li>Redesigned the ordering flow using behavioral economics and UX heuristics to reduce cognitive load</li>
+                  <li>Built a functional MVP mobile ordering prototype for rapid testing and iteration</li>
+                  <li>Demonstrated how improved UX can reduce cognitive load while preserving choice and business flexibility</li>
+                </ul>
+              </section>
+          
+            <section class="case-context">
+                <h2>Background</h2>
+              
+                <p>
+                  My favorite local donut shop offered a “build your own donut” bar that customers
+                  loved and struggled with. A massive chalkboard listed dozens of icings, toppings,
+                  drizzles, and add-ons in a single undifferentiated block.
+                </p>
+              
+                <p>
+                  The abundance felt generous, but in practice it produced confusion, hesitation,
+                  and regret. Kids froze. Adults overthought. Group orders felt stressful.
+                  Customers routinely asked clarifying questions or changed their minds mid-order.
+                  From a product perspective, the chalkboard menu functioned as an 
+                  unstructured interface, forcing customers to perform unnecessary cognitive work 
+                  at the point of purchase.
+                </p>
+            
+                <figure>
+                  <img src="https://alice-ji.github.io/portfolio/assets/donut-chalkboard.png" alt="Chaotic chalkboard donut menu">
+                  <figcaption>Before: A single, unstructured list of options created cognitive overload.</figcaption>
+                </figure>
+              </section>
+              
+              <section class="case-problem">
+                <h2>The Problem</h2>
+              
+                <ul>
+                  <li>Too many options presented at once, with no structure</li>
+                  <li>Unclear rules (e.g., “choose a topping” — one or many?)</li>
+                  <li>No way to visualize the final donut before ordering</li>
+                  <li>High decision fatigue for kids, groups, and neurodivergent customers</li>
+                </ul>
+              
+                <p>
+                  This environment mirrored classic findings in behavioral economics: when choice
+                  sets become too large and poorly organized, people stall, default poorly, or walk
+                  away dissatisfied.
+                  These issues created clear UX failure modes: stalled decisions, reliance on staff 
+                  intervention, order revisions, and post-purchase regret—all of which impact throughput, 
+                  satisfaction, and perceived quality.
+                </p>
+
+                <figure>
+                  <img src="https://alice-ji.github.io/portfolio/assets/donut-journey.png" alt="Journey Mapping">
+                  <figcaption>Journey Mapping: the Donut Odyssey</figcaption>
+                </figure>
+              </section>
+              
+              <section class="case-framework">
+                <h2>Design Framework</h2>
+              
+                <p>
+                  I approached the redesign using principles from choice architecture, 
+                  cognitive load theory, and applied decision science, treating the 
+                  ordering flow as a decision system rather than a static menu.
+                </p>
+              
+                <ul>
+                  <li>Thaler & Sunstein’s work on nudges and defaults</li>
+                  <li>The Jam Study (Iyengar & Lepper) on choice overload</li>
+                  <li>Miller’s 7±2 limits on working memory</li>
+                </ul>
+              
+                <blockquote>
+                  You don’t have too many choices. You have too little structure.
+                </blockquote>
+                <figure>
+                    <img src="https://alice-ji.github.io/portfolio/assets/donut-prototype.png" alt="Prototype">
+                    <figcaption>Prototyping Workflow</figcaption>
+                  </figure>
+              </section>
+              
+              <section class="case-solution">
+                <h2>The Solution</h2>
+              
+                <h3>1. Start With Delight, Not Decisions</h3>
+                <p>
+                  The home screen opens with a playful animated donut rather than an immediate
+                  decision. This moment of delight slows users down and reduces perceived pressure.
+                </p>
+            
+                <figure>
+                  <img src="https://alice-ji.github.io/portfolio/assets/donut-home.gif" alt="Animated donut menu screen">
+                </figure>
+              
+                <h3>2. Structured Customization</h3>
+                <p>
+                  This step functioned as feature-level constraint design, guiding users through 
+                  a sequence of low-effort micro-decisions instead of a single high-cost choice.
+                  Toppings were grouped into seven clear categories (icing, sprinkles, drizzles,
+                  etc.). Users could choose one—or none—from each group, dramatically reducing
+                  cognitive load.
+                </p>
+              
+                <figure>
+                  <img src="https://alice-ji.github.io/portfolio/assets/donut-builder.gif" alt="Categorized donut toppings">
+                </figure>
+              
+                <h3>3. Real-Time Visualization</h3>
+                <p>
+                  Real-time rendering acted as immediate feedback, reducing uncertainty and 
+                  improving decision confidence—key drivers of conversion in customizable products.
+                  As users selected options, the donut updated live using layered PNG assets.
+                  This eliminated ambiguity and reduced regret by making outcomes visible.
+                </p>
+              
+                <figure>
+                  <img src="https://alice-ji.github.io/portfolio/assets/donut-visual.gif" alt="Donut building in real time">
+                </figure>
+              
+                <h3>4. Escape Hatches for Decision Fatigue</h3>
+                <p>
+                  For moments of overload, I added:
+                </p>
+                <ul>
+                  <li>A playful <strong>Randomizer</strong> that generates a donut automatically</li>
+                  <li>A gentle timed nudge toward curated “House Specials”</li>
+                </ul>
+              
+                <figure>
+                  <img src="https://alice-ji.github.io/portfolio/assets/donut-random.gif" alt="Donut randomizer feature">
+                </figure>
+                <figure>
+                    <img src="https://alice-ji.github.io/portfolio/assets/donut-nudge.gif" alt="Behavioral Nudge">
+                  </figure>
+
+                  <p>
+                    These elements served as intentional fallback mechanisms, allowing users to 
+                    progress even under high cognitive load without abandoning the flow.
+                  </p>
+              </section>
+              
+              <section class="case-flow">
+                <h2>Checkout & Completion</h2>
+              
+                <p>
+                  The cart, checkout, and receipt flows were intentionally simple, providing clear
+                  feedback at every step. Subtle animations (button shakes, confetti) reinforced
+                  progress without adding friction.
+                </p>
+              
+                <!-- GIF PLACEHOLDER -->
+                <figure>
+                  <img src="https://alice-ji.github.io/portfolio/assets/donut-checkout.gif" alt="Checkout and receipt flow">
+                </figure>
+              </section>
+              
+              <section class="case-outcome">
+                <h2>Outcome & Reflection</h2>
+              
+                <p>
+                  Informal usability testing and in-situ observation suggested reduced hesitation, 
+                  fewer clarification questions, and higher confidence at checkout 
+                  compared to the chalkboard baseline.
+                   
+                    Users (especially children and neurodivergent users) responded strongly to the 
+                    Randomizer and real-time visual build, often expressing excitement and confidence 
+                    in their final choices.
+                    In contrast to the chalkboard menu, the structured flow reduced hesitation and
+                    second-guessing. Customers spent less time deliberating, asked fewer questions,
+                    and appeared more satisfied with what they ordered.
+                </p>
+              
+                <p>
+                  Although the project did not progress to full deployment, the MVP validated 
+                  key assumptions about choice structuring, visualization, and default design 
+                  under real-world constraints. It revealed how choice
+                    architecture, visualization, and defaults can meaningfully improve decision quality
+                    without limiting freedom.
+                </p>
+
+                <p>
+                    Working in a small, informal team also shaped the design process. The problem space
+                    was initially vague (“the menu is overwhelming”) and had to be translated into
+                    concrete, testable design decisions under tight time and technical constraints.
+                    This required prioritizing interventions with the highest behavioral leverage,
+                    building only what could realistically be prototyped, and making tradeoffs that
+                    balanced user benefit with business feasibility.
+                </p>
+
+                <p>
+                The experience reinforced a core product lesson: good design is rarely about
+                ideal solutions. It’s about making principled choices within real constraints, and
+                knowing which details matter enough to build.
+                </p>
+              </section>
+              
+              <section class="case-takeaways">
+                <h2>Key Takeaways</h2>
+                <ul>
+                  <li>More choices aren’t better. <strong>Better structure is</strong></li>
+                  <li>Defaults and visualization reduce regret</li>
+                  <li>Good UX protects users from fatigue, not from fun</li>
+                  <li>Behavioral UX interventions can be low-cost, 
+                    high-leverage product improvements, especially in resource-constrained environments</li>
+                </ul>
+
+                <p>
+                  Explore the fully interactive prototype
+                <a href="https://donutworks.netlify.app/" target="_blank">
+                  here
+                </a>
+                </p>
+              </section>
+          
+          </section>          
+
+      <section class="contact-section">
+        <a href="mailto:rji3@illinois.edu" class="contact-email"
+          >rji3@illinois.edu</a
+        >
+        <div class="social-links">
+          <a
+            href="https://www.linkedin.com/in/alice-ji-8a4b2a161/"
+            target="_blank"
+          >
+            <img
+              src="https://alice-ji.github.io/portfolio/assets/LinkedIn.png"
+              alt="LinkedIn"
+              title="LinkedIn"
+            />
+          </a>
+          <a
+            href="https://scholar.google.com/citations?hl=en&user=CVlgqCAAAAAJ"
+            target="_blank"
+          >
+            <img
+              src="https://alice-ji.github.io/portfolio/assets/GoogleScholarLogo.png"
+              alt="Google Scholar"
+              title="Google Scholar"
+            />
+          </a>
+          <a href="https://github.com/Alice-Ji" target="_blank">
+            <img
+              src="https://alice-ji.github.io/portfolio/assets/github.png"
+              alt="Github"
+              title="Github"
+            />
+          </a>
+          <a href="https://medium.com/@alice-ji" target="_blank">
+            <img
+              src="https://alice-ji.github.io/portfolio/assets/medium.png"
+              alt="Medium"
+              title="Medium"
+            />
+          <a href="https://madlabresearch.web.illinois.edu/" target="_blank">
+            <img
+              src="https://alice-ji.github.io/portfolio/assets/madlab.png"
+              alt="MadLab"
+              title="MadLab"
+            />
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <footer>&copy; 2026 Alice Ji</footer>
+
+    <script>
+      const btn = document.getElementById("dark-toggle");
+      if (localStorage.getItem("dark-mode") === "true") {
+        document.body.classList.add("dark-mode");
+        btn.textContent = "☀️ Light Mode";
+      }
+      btn.onclick = () => {
+        document.body.classList.toggle("dark-mode");
+        const enabled = document.body.classList.contains("dark-mode");
+        btn.textContent = enabled ? "☀️ Light Mode" : "🌒 Dark Mode";
+        localStorage.setItem("dark-mode", enabled);
+      };
+    </script>
+  </body>
+</html>

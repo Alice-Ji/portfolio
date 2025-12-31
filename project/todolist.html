@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+      href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <meta charset="UTF-8" />
+    <title>Alice Ji – Portfolio</title>
+    <meta
+      name="description"
+      content="Portfolio of Alice Ji. A showcase of projects bridging research and industry applications."
+    />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <link rel="stylesheet" href="../styles.css" />
+    <link
+      rel="icon"
+      href="https://alice-ji.github.io/portfolio/assets/favicon.png"
+      type="image/png"
+    />
+  </head>
+  <body>
+    <nav class="navbar">
+      <a href="/">
+        <img
+          src="https://alice-ji.github.io/portfolio/assets/favicon.png"
+          style="width: 24px; height: 24px;"
+        />
+      </a>
+      <a href="/" class="nav-link">Home</a>
+      <button id="dark-toggle" class="dark-toggle">🌒 Dark Mode</button>
+    </nav>
+
+    <a href="/" id="back-btn" title="Back to portfolio">
+      &#8678; Back
+    </a>
+    
+    <main>
+        <section class="case-study">
+
+            <header class="case-header">
+              <figure>
+                <img src="https://alice-ji.github.io/portfolio/assets/todolist-card.png" alt="To Do List hero image" />
+              </figure>
+          
+              <h1>To Do List.</h1>
+          
+              <p class="subtitle">
+                A dual-view task management system designed to support multiple mental models of work and user autonomy
+              </p>
+          
+              <div class="case-meta">
+                <p><strong>Role:</strong> Product Designer & Research Prototyper</p>
+                <p><strong>What I Built:</strong> A fully interactive Kanban + Calendar task system with a live theme editor</p>
+                <p><strong>Methods:</strong> Product prototyping, interaction design, behavioral framing, iterative UX testing</p>
+                <p><strong>Tools:</strong> Figma, Photoshop, React, TypeScript, HTML/CSS, Vite, localStorage</p>
+                <p><strong>Focus:</strong> Mental models, decision friction, user autonomy, aesthetic state as a functional variable</p>
+              </div>
+            </header>
+          
+            <section class="case-glance">
+              <h2>At a Glance</h2>
+              <ul>
+                <li>Built a <strong>single task system</strong> that supports both Kanban and Calendar views without duplicating data</li>
+                <li>Designed for users who switch between spatial, temporal, and unstructured ways of thinking</li>
+                <li>Treats visual design and theming as a core interaction, not a cosmetic afterthought</li>
+                <li>Explores how interface flexibility can reduce cognitive friction and support self-regulation</li>
+              </ul>
+            </section>
+          
+            <section class="case-narrative">
+                <h2>What This Is (and Why It Exists)</h2>
+              
+                <p>
+                  Most productivity tools implicitly assume a single, “correct” way of organizing work.
+                  Some privilege lists. Others privilege calendars. Many assume productivity is linear,
+                  tidy, and emotionally neutral.
+                </p>
+              
+                <p>
+                  That assumption breaks down quickly in real use. People shift how they think about tasks
+                  depending on time pressure, emotional state, uncertainty, and workload. Forcing users
+                  into a single representation can increase friction, overwhelm, and disengagement.
+                </p>
+              
+                <p>
+                  <strong>To Do List.</strong> began as a personal prototyping project to explore what
+                  happens when a task system adapts to users’ mental models instead of prescribing one.
+                  The core idea is simple: the same underlying tasks should be legible through different
+                  lenses, without requiring users to restructure their work each time their thinking changes.
+                </p>
+              
+                <h3>Process & Iteration Approach</h3>
+              
+                <p>
+                  This project followed a <strong>prototype-first design process</strong>. Rather than
+                  progressing through static wireframes and mockups, I built a working interface early
+                  and used live interaction to explore design tradeoffs in real time.
+                </p>
+              
+                <div class="case-grid"
+                     style="display:grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap:16px; margin-top:16px;">
+              
+                  <div class="case-card"
+                       style="padding:16px; border-radius:14px; border:1px solid var(--divider, rgba(0,0,0,0.08)); background: var(--card, #fff);">
+                    <h3>1. Conceptual Framing</h3>
+                    <ul>
+                      <li>Identified breakdowns in existing productivity models</li>
+                      <li>Focused on mental model shifts, emotional load, and autonomy</li>
+                      <li>Defined flexibility as a first-class design constraint</li>
+                    </ul>
+                  </div>
+              
+                  <div class="case-card"
+                       style="padding:16px; border-radius:14px; border:1px solid var(--divider, rgba(0,0,0,0.08)); background: var(--card, #fff);">
+                    <h3>2. Working Prototype (Early)</h3>
+                    <ul>
+                      <li>Built a functional Kanban + Calendar system immediately</li>
+                      <li>Designed directly in code rather than static mockups</li>
+                      <li>Used real interactions to surface design tradeoffs</li>
+                    </ul>
+                  </div>
+              
+                  <div class="case-card"
+                       style="padding:16px; border-radius:14px; border:1px solid var(--divider, rgba(0,0,0,0.08)); background: var(--card, #fff);">
+                    <h3>3. Interaction Testing & Self-Use</h3>
+                    <ul>
+                      <li>Used the system in real task contexts</li>
+                      <li>Observed friction, overload, and breakdown points</li>
+                      <li>Evaluated mental effort across views and themes</li>
+                    </ul>
+                  </div>
+              
+                  <div class="case-card"
+                       style="padding:16px; border-radius:14px; border:1px solid var(--divider, rgba(0,0,0,0.08)); background: var(--card, #fff);">
+                    <h3>4. Refinement Inside the Live System</h3>
+                    <ul>
+                      <li>Iterated on layout, affordances, and transitions</li>
+                      <li>Adjusted theming controls based on perceived effort</li>
+                      <li>Treated the prototype as both design artifact and testbed</li>
+                    </ul>
+                  </div>
+              
+                </div>
+              </section>             
+          
+            <section class="case-design">
+              <h2>Core Views</h2>
+          
+              <div class="case-grid" style="display:grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap:16px;">
+                <div class="case-card" style="padding:16px; border-radius:14px; border:1px solid var(--divider, rgba(0,0,0,0.08)); background: var(--card, #fff);">
+                  <h3>Kanban Board View</h3>
+                  <ul>
+                    <li>Multiple lists with drag-and-drop tasks</li>
+                    <li>Supports spatial reasoning and visual grouping</li>
+                    <li>Optimized for ambiguous, ongoing, or loosely defined work</li>
+                    <li>Encourages cognitive offloading through spatial arrangement</li>
+                  </ul>
+                </div>
+          
+                <div class="case-card" style="padding:16px; border-radius:14px; border:1px solid var(--divider, rgba(0,0,0,0.08)); background: var(--card, #fff);">
+                  <h3>Calendar View</h3>
+                  <ul>
+                    <li>Tasks mapped onto time by due date</li>
+                    <li>Makes urgency, overload, and gaps immediately visible</li>
+                    <li>Supports planning, prioritization, and reality checks</li>
+                    <li>Same data, different cognitive framing</li>
+                  </ul>
+                </div>
+              </div>
+
+              <figure>
+                <img
+                  src="https://alice-ji.github.io/portfolio/assets/todolist-switchview.gif"
+                />
+                <figcaption>
+                    Switching between views transform tasks representation.
+                </figcaption>
+            </figure> 
+          
+              <p style="margin-top:16px;">
+                This design choice preserves continuity while allowing users to 
+                choose the mental model that best fits their current state.
+              </p>
+            </section>
+          
+            <section class="case-theme">
+              <h2>Themes as a Functional Feature</h2>
+          
+              <p>
+                Many productivity tools treat aesthetics as neutral or purely decorative. This project explicitly rejects
+                that assumption. Visual design affects perceived effort, emotional load, and willingness to engage with
+                difficult tasks.
+              </p>
+          
+              <p>
+                <strong>To Do List.</strong> treats themes as a form of interaction design. Users can switch visual styles
+                depending on mood, energy, or the kind of pressure they need: soft and calming on some days, high-contrast
+                and demanding on others.
+              </p>
+
+              <section class="case-slideshow" aria-label="Theme examples slideshow">
+                <div class="slideshow-viewport">
+                  <div class="slideshow-track">
+                    <!-- Slides -->
+                    <img src="https://alice-ji.github.io/portfolio/assets/todolist-theme1.png" alt="To Do List theme example 1" />
+                    <img src="https://alice-ji.github.io/portfolio/assets/todolist-theme2.png" alt="To Do List theme example 2" />
+                    <img src="https://alice-ji.github.io/portfolio/assets/todolist-theme3.png" alt="To Do List theme example 3" />
+                    <img src="https://alice-ji.github.io/portfolio/assets/todolist-theme4.png" alt="To Do List theme example 4" />
+                    <img src="https://alice-ji.github.io/portfolio/assets/todolist-theme5.png" alt="To Do List theme example 5" />
+                    <img src="https://alice-ji.github.io/portfolio/assets/todolist-theme6.png" alt="To Do List theme example 6" />
+                    <img src="https://alice-ji.github.io/portfolio/assets/todolist-theme7.png" alt="To Do List theme example 7" />
+                    <img src="https://alice-ji.github.io/portfolio/assets/todolist-theme8.png" alt="To Do List theme example 8" />
+                    <img src="https://alice-ji.github.io/portfolio/assets/todolist-theme9.png" alt="To Do List theme example 9" />
+                    <img src="https://alice-ji.github.io/portfolio/assets/todolist-theme10.png" alt="To Do List theme example 10" />
+                    <img src="https://alice-ji.github.io/portfolio/assets/todolist-theme11.png" alt="To Do List theme example 11" />
+                    <img src="https://alice-ji.github.io/portfolio/assets/todolist-theme12.png" alt="To Do List theme example 12" />
+                  </div>
+                </div>
+              
+                <div class="slideshow-controls">
+                  <button class="slide-prev" aria-label="Previous slide">
+                    <span>
+                    ‹
+                    </span>
+                  </button>
+                  <button class="slide-next" aria-label="Next slide">
+                    <span>
+                    ›
+                    </span>
+                  </button>
+                </div>
+              </section>
+              
+              </div>
+
+            </section>
+          
+            <section class="case-design">
+              <h2>DIY Theme Editor</h2>
+          
+              <p>
+                The app includes a built-in theme editor that gives users direct control over the interface without
+                exposing raw CSS or risking breakage. The goal is expressive customization that preserves usability
+                and structural integrity.
+              </p>
+
+              <video width="100%" autoplay muted loop>
+                <source
+                  src="https://alice-ji.github.io/portfolio/assets/todolist-demo.mp4"
+                  type="video/mp4"
+                />
+                Your browser does not support the video tag.
+              </video>
+          
+              <ul>
+                <li>Fully customizable themes</li>
+                <li>Control over:
+                  <ul>
+                    <li>colors</li>
+                    <li>fonts</li>
+                    <li>spacing</li>
+                    <li>borders</li>
+                    <li>calendar-specific surfaces</li>
+                  </ul>
+                </li>
+                <li>Live preview in both board and calendar views</li>
+                <li>Section-level reset and JSON export for portability</li>
+              </ul>
+          
+              <p>
+                Inspired by MySpace / Tumblr CSS and AO3 skins, but designed to be <strong>approachable and safe</strong>.
+                The editor emphasizes user agency without demanding technical expertise.
+              </p>
+            </section>
+          
+            <section class="case-methods">
+              <h2>Design Philosophy</h2>
+          
+              <p>
+                This project is intentionally opinionated. It assumes that productivity is emotional, that cognitive
+                load fluctuates, and that tools should adapt to users rather than disciplining them into a single workflow.
+              </p>
+          
+              <ul>
+                <li><strong>User autonomy:</strong> users choose how tasks are represented</li>
+                <li><strong>Empathy-driven design:</strong> supports overwhelmed, non-linear work patterns</li>
+                <li><strong>Low decision friction:</strong> no forced restructuring when switching views</li>
+                <li><strong>Aesthetic agency:</strong> visual design as a lever for motivation and regulation</li>
+              </ul>
+            </section>
+          
+            <section class="case-conclusion">
+              <h2>Key Takeaway</h2>
+          
+              <p>
+                <strong>To Do List.</strong> is not about optimizing productivity metrics. It is an exploration of how
+                interface flexibility, aesthetic control, and multiple mental models can support user autonomy and
+                reduce friction in everyday task management.
+              </p>
+          
+              <p>
+                It complements my broader research agenda by treating working UI as the starting point for understanding
+                behavior—using concrete design decisions to study how people think, choose, and cope in interactive systems.
+              </p>
+
+              <p>
+                  View
+                <a href="https://github.com/Alice-Ji/ToDoList" target="_blank">
+                  Github Repo
+                </a>
+                &
+                <a href="https://alice-ji.github.io/ToDoList/" target="_blank">
+                    Prototype
+                </a>
+                </p>
+            </section>
+          
+          </section>
+
+
+      <section class="contact-section">
+        <a href="mailto:rji3@illinois.edu" class="contact-email"
+          >rji3@illinois.edu</a
+        >
+        <div class="social-links">
+          <a
+            href="https://www.linkedin.com/in/alice-ji-8a4b2a161/"
+            target="_blank"
+          >
+            <img
+              src="https://alice-ji.github.io/portfolio/assets/LinkedIn.png"
+              alt="LinkedIn"
+              title="LinkedIn"
+            />
+          </a>
+          <a
+            href="https://scholar.google.com/citations?hl=en&user=CVlgqCAAAAAJ"
+            target="_blank"
+          >
+            <img
+              src="https://alice-ji.github.io/portfolio/assets/GoogleScholarLogo.png"
+              alt="Google Scholar"
+              title="Google Scholar"
+            />
+          </a>
+          <a href="https://github.com/Alice-Ji" target="_blank">
+            <img
+              src="https://alice-ji.github.io/portfolio/assets/github.png"
+              alt="Github"
+              title="Github"
+            />
+          </a>
+          <a href="https://medium.com/@alice-ji" target="_blank">
+            <img
+              src="https://alice-ji.github.io/portfolio/assets/medium.png"
+              alt="Medium"
+              title="Medium"
+            />
+          <a href="https://madlabresearch.web.illinois.edu/" target="_blank">
+            <img
+              src="https://alice-ji.github.io/portfolio/assets/madlab.png"
+              alt="MadLab"
+              title="MadLab"
+            />
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <footer>&copy; 2026 Alice Ji</footer>
+
+    <script>
+      const btn = document.getElementById("dark-toggle");
+      if (localStorage.getItem("dark-mode") === "true") {
+        document.body.classList.add("dark-mode");
+        btn.textContent = "☀️ Light Mode";
+      }
+      btn.onclick = () => {
+        document.body.classList.toggle("dark-mode");
+        const enabled = document.body.classList.contains("dark-mode");
+        btn.textContent = enabled ? "☀️ Light Mode" : "🌒 Dark Mode";
+        localStorage.setItem("dark-mode", enabled);
+      };
+
+  (function () {
+    const slideshow = document.querySelector(".case-slideshow");
+    if (!slideshow) return;
+
+    const track = slideshow.querySelector(".slideshow-track");
+    const slides = Array.from(track.children);
+    const prev = slideshow.querySelector(".slide-prev");
+    const next = slideshow.querySelector(".slide-next");
+
+    let index = 0;
+    let interval = null;
+    const DURATION = 3000;
+
+    function update() {
+      track.style.transform = `translateX(-${index * 100}%)`;
+    }
+
+    function nextSlide() {
+      index = (index + 1) % slides.length;
+      update();
+    }
+
+    function prevSlide() {
+      index = (index - 1 + slides.length) % slides.length;
+      update();
+    }
+
+    function start() {
+      if (interval) return;
+      interval = setInterval(nextSlide, DURATION);
+    }
+
+    function stop() {
+      clearInterval(interval);
+    }
+
+    next.addEventListener("click", () => {
+      stop();
+      nextSlide();
+      start();
+    });
+
+    prev.addEventListener("click", () => {
+      stop();
+      prevSlide();
+      start();
+    });
+
+    slideshow.addEventListener("mouseenter", stop);
+    slideshow.addEventListener("mouseleave", start);
+
+    start();
+  })();
+
+    </script>
+  </body>
+</html>

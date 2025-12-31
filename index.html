@@ -1,1 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+      href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <meta charset="UTF-8" />
+    <title>Alice Ji – Portfolio</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="icon"
+      href="https://alice-ji.github.io/portfolio/assets/flavicon.png"
+      type="image/png"
+    />
+  </head>
+  <body>
+    <nav class="navbar">
+      <a href="/">
+        <img
+          src="https://alice-ji.github.io/portfolio/assets/favicon.png"
+          style="width: 24px; height: 24px;"
+        />
+      </a>
+      <a href="/" class="nav-link active">Home</a>
+      <button id="dark-toggle" class="dark-toggle">🌒 Dark Mode</button>
+    </nav>
 
+    <main>
+      <header class="profile-header">
+        <div class="profile-card reveal">
+        <div class="profile-grid">
+          <div class="profile-avatar">
+            <img
+              src="https://alice-ji.github.io/portfolio/assets/avatar.jpg"
+              alt="Alice Ji"
+              class="profile-img"
+            />
+          </div>
+      
+          <div class="profile-content">
+            <h1>Alice Ji</h1>
+      
+            <p class="hero-sub">
+              Behavioral UX Researcher & Mixed-Methods Scientist
+            </p>
+      
+            <p class="hero-lede">
+              I help teams understand how interface design shapes attention and
+              decision-making using experiments and behavioral data to inform product
+              decisions.
+            </p>
+      
+            <ul class="cred-list">
+              <li>
+                PhD Researcher, Institute of Communications Research (UIUC)
+              </li>
+              <li>
+                Experimental UX research · Eye-tracking · Behavioral telemetry · Mixed methods
+              </li>
+              <li>
+                Social platforms · Advertising systems · Decision-heavy user flows
+              </li>
+            </ul>
+            </div>
+          </div>
+          <br></br>
+          <section class="contact-section">
+            <a href="mailto:rji3@illinois.edu" class="contact-email"
+              >rji3@illinois.edu</a
+            >
+            <div class="social-links">
+              <a
+                href="https://www.linkedin.com/in/alice-ji-8a4b2a161/"
+                target="_blank"
+              >
+                <img
+                  src="https://alice-ji.github.io/portfolio/assets/LinkedIn.png"
+                  alt="LinkedIn"
+                  title="LinkedIn"
+                />
+              </a>
+              <a
+                href="https://scholar.google.com/citations?hl=en&user=CVlgqCAAAAAJ"
+                target="_blank"
+              >
+                <img
+                  src="https://alice-ji.github.io/portfolio/assets/GoogleScholarLogo.png"
+                  alt="Google Scholar"
+                  title="Google Scholar"
+                />
+              </a>
+              <a href="https://github.com/Alice-Ji" target="_blank">
+                <img
+                  src="https://alice-ji.github.io/portfolio/assets/github.png"
+                  alt="Github"
+                  title="Github"
+                />
+              </a>
+              <a href="https://medium.com/@alice-ji" target="_blank">
+                <img
+                  src="https://alice-ji.github.io/portfolio/assets/medium.png"
+                  alt="Medium"
+                  title="Medium"
+                />
+              </a>
+              <a href="https://madlabresearch.web.illinois.edu/" target="_blank">
+                <img
+                  src="https://alice-ji.github.io/portfolio/assets/madlab.png"
+                  alt="MadLab"
+                  title="MadLab"
+                />
+              </a>
+            </div>
+          </section>  
+        </div>
+        </div>
+      </header>
+      
+      <section class="card-grid" aria-label="Portfolio">
+        <section class="featured-grid">
+          <a href="/project/donut.html" class="project-card reveal">
+            <div class="card-media">
+              <img src="https://alice-ji.github.io/portfolio/assets/donut-card.png" alt="Donut Shop App">
+              <div class="card-tags">
+                <span>Choice Architecture</span>
+                <span>Customization UX</span>
+              </div>
+            </div>
+        
+            <div class="card-text">
+              <h3>Donut Shop Ordering App</h3>
+              <p>
+                Designed and validated an MVP ordering flow for a local business, 
+                identifying which customization constraints reduced 
+                decision paralysis without harming satisfaction.
+              </p>
+            </div>
+          </a>
+        </section>
+
+        <section class="card-grid secondary-grid">
+          <a href="/project/shoppable.html" class="project-card reveal">
+            <div class="card-media">
+              <img src="https://alice-ji.github.io/portfolio/assets/shoppable-card.png" alt="Shoppable Advertising">
+              <div class="card-tags">
+                <span>Social Commerce</span>
+                <span>Interactive Advertising</span>
+              </div>
+            </div>
+            <div class="card-text">
+              <h3>Shoppable Advertising Across Platforms</h3>
+              <p>
+                Multi-study program examining when shoppable ads support discovery
+                versus trigger resistance, informing interaction and monetization
+                tradeoffs across social and streaming contexts.
+              </p>
+            </div>
+          </a>
+  
+          <a href="/project/todolist.html" class="project-card reveal">
+            <div class="card-media">
+              <img src="https://alice-ji.github.io/portfolio/assets/todolist-card.png" alt="To Do List">
+              <div class="card-tags">
+                <span>User Autonomy</span>
+                <span>Productivity</span>
+                <span>Customization UX</span>
+              </div>
+            </div>
+        
+            <div class="card-text">
+              <h3>To Do List</h3>
+              <p>
+                Built a dual-view task system to test how different representations
+                (Kanban vs. Calendar) affect planning, perceived control, and
+                cognitive load.
+              </p>
+            </div>
+          </a>
+  
+          <a href="/project/aiwriting.html" 
+          class="project-card reveal">
+          <div class="card-media">
+            <img src="https://alice-ji.github.io/portfolio/assets/aiwriting-card.png" alt="AI Writing">
+            <div class="card-tags">
+              <span>User Autonomy</span>
+              <span>AI Assistance</span>
+            </div>
+          </div>
+      
+          <div class="card-text">
+            <h3>The Ship of Theseus Paradox in AI-Assisted Writing</h3>
+            <p>
+              Multi-method study identifying design factors that preserve perceived
+              authorship and control in AI-assisted writing tools.
+            </p>
+            <p style="font-size: 1rem">
+              Featured by <strong>UX Collective</strong>
+              <img 
+              src="https://alice-ji.github.io/portfolio/assets/uxcollective-icon.png" 
+              alt="UX Collective"
+              style="
+                height:0.9em;
+                width:auto;
+                margin-left:0.25em;
+                vertical-align:-0.1em;
+                opacity:0.85;
+              "
+              >
+            </p>
+          </div>
+        </a>
+  
+          <a href="/project/gacha.html" class="project-card reveal">
+            <div class="card-media">
+              <img src="https://alice-ji.github.io/portfolio/assets/gacha-card.png" alt="Gacha Behavioral Economics">
+              <div class="card-tags">
+                <span>Behavioral Economics</span>
+                <span>Platform Monetization</span>
+              </div>
+            </div>
+        
+            <div class="card-text">
+              <h3>Gacha Behavioral Economics</h3>
+              <p>
+                Built a playable gacha system to isolate how reward schedules,
+            pricing, and transparency shape trust, engagement, and spending
+            behavior.
+              </p>
+            </div>
+          </a>
+  
+          <a href="/project/affordance.html" class="project-card reveal">
+            <div class="card-media">
+              <img src="https://alice-ji.github.io/portfolio/assets/affordance-card.png" alt="Platform Affordance">
+              <div class="card-tags">
+                <span>Social Commerce</span>
+                <span>Platform Affordance</span>
+              </div>
+            </div>
+            <div class="card-text">
+              <h3>When Social Features Drive Influencer Conversions</h3>
+              <p>
+                Causal study identifying when social affordances strengthen—or
+                undermine—the relationship between parasocial connection and
+                purchase intent.
+              </p>
+            </div>
+          </a>
+  
+          <a href="/project/pharmaad.html" class="project-card reveal">
+            <div class="card-media">
+              <img src="https://alice-ji.github.io/portfolio/assets/pharmaad-card.png" alt="Pharmaceutical Advertising">
+              <div class="card-tags">
+                <span>Risk Communication</span>
+                <span>Social Commerce</span>
+              </div>
+            </div>
+            <div class="card-text">
+              <h3>Pharmaceutical Advertising on Social Media</h3>
+              <p>
+                Experimental research testing alternative risk disclosure designs to
+            improve attention and comprehension while maintaining regulatory
+            compliance.
+              </p>
+            </div>
+          </a>
+        </section>
+    </main>
+    <footer>&copy; 2026 Alice Ji</footer>
+    <script>
+      const btn = document.getElementById("dark-toggle");
+      // On load, restore state
+      if (localStorage.getItem("dark-mode") === "true") {
+        document.body.classList.add("dark-mode");
+        btn.textContent = "☀️ Light Mode";
+      }
+      // Toggle and save state
+      btn.onclick = () => {
+        document.body.classList.toggle("dark-mode");
+        const enabled = document.body.classList.contains("dark-mode");
+        btn.textContent = enabled ? "☀️ Light Mode" : "🌒 Dark Mode";
+        localStorage.setItem("dark-mode", enabled);
+      };
+
+      // motion
+      const observer = new IntersectionObserver(
+        entries => {
+          entries.forEach(entry => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add('is-visible');
+              observer.unobserve(entry.target);
+            }
+          });
+        },
+        {
+          threshold: 0.15
+        }
+      );
+
+      document.querySelectorAll('.reveal').forEach(el => {
+        observer.observe(el);
+      });
+
+      // save scroll position before clicking into a case study
+      document.querySelectorAll("a").forEach((link) => {
+        link.addEventListener("click", () => {
+          sessionStorage.setItem("scrollPos", window.scrollY);
+        });
+      });
+      // restore scroll position on portfolio page
+      const scrollPos = sessionStorage.getItem("scrollPos");
+      if (scrollPos) {
+        window.scrollTo({ top: parseInt(scrollPos), behavior: "smooth" });
+        sessionStorage.removeItem("scrollPos"); // Clear so it doesn't trigger again later
+      }
+</script>
+
+    </script>
+  </body>
+</html>
