@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+      href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <meta charset="UTF-8" />
+    <title>Alice Ji – Portfolio</title>
+    <meta
+      name="description"
+      content="Portfolio of Alice Ji. A showcase of projects bridging research and industry applications."
+    />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <link rel="stylesheet" href="../styles.css" />
+    <link
+      rel="icon"
+      href="https://alice-ji.github.io/portfolio/assets/favicon.png"
+      type="image/png"
+    />
+  </head>
+  <body>
+    <nav class="navbar">
+      <a href="../index.html">
+        <img
+          src="https://alice-ji.github.io/portfolio/assets/favicon.png"
+          style="width: 24px; height: 24px;"
+        />
+      </a>
+      <a href="../index.html" class="nav-link">Home</a>
+      <button id="dark-toggle" class="dark-toggle">🌒 Dark Mode</button>
+    </nav>
+
+    <a href="../index.html" id="back-btn" title="Back to portfolio">
+      &#8678; Back
+    </a>
+
+    <main>
+
+        <section class="case-study">
+
+            <header class="case-header">
+              <figure>
+                <img src="https://alice-ji.github.io/portfolio/assets/llmuxr-card.png" />
+              </figure>
+          
+              <h1>Beyond Buzzwords: Integrating LLMs Into UX Research</h1>
+          
+              <p class="subtitle">
+                From planning to activation, a real-world breakdown of how LLMs 
+                can actually support UX research.
+              </p>
+          
+              <p>
+                This case study translates the key insights from my peer-reviewed publication 
+                <em>“Beyond Buzzwords: The Development of Large Language Models and Their Use in Advertising and Strategic Communication Research”</em> 
+                
+                <a
+                href="https://drive.google.com/file/d/1Roi8x5Ls-XBb4zsZUcapD2ENqO0R9iyD/view?usp=sharing"
+                target="_blank"
+                rel="noopener noreferrer"
+                style="
+                  display:inline-flex;
+                  align-items:center;
+                  text-decoration:none;
+                  vertical-align:middle;
+                "
+              >
+                <img 
+                  src="https://alice-ji.github.io/portfolio/assets/GoogleScholarLogo.png" 
+                  alt="Read publication on Google Scholar"
+                  style="
+                    height:0.9em;
+                    width:auto;
+                    opacity:0.85;
+                    display:block;
+                    cursor:pointer;
+                  "
+                >
+              </a>              
+                into actionable strategies for UX research. In it, we proposed a conceptual framework for understanding how LLMs are being used in advertising research—and by extension, how these tools can be meaningfully applied within product and UX research workflows.
+              </p>
+            
+              <p>
+                Drawing on our PRISMA-guided literature review of 68 empirical studies, we identified three major LLM use cases relevant to UXR:
+              </p>
+
+              <div style="overflow-x:auto; margin-top:1.5rem;">
+                <table style="width:100%; border-collapse:collapse; min-width:900px;">
+                  <thead>
+                    <tr style="text-align:left; background:#f2f5fa;">
+                      <th style="padding:12px; border-bottom:1px solid #ddd;">Use Case</th>
+                      <th style="padding:12px; border-bottom:1px solid #ddd;">What It Looks Like in UXR</th>
+                      <th style="padding:12px; border-bottom:1px solid #ddd;">Opportunity</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr style="background:#f7f8fa;">
+                      <td style="padding:12px; border-bottom:1px solid #eee;">LLM Output Testing</td>
+                      <td style="padding:12px; border-bottom:1px solid #eee;">
+                        Researchers evaluate the quality, tone, or persuasiveness of LLM-generated content
+                      </td>
+                      <td style="padding:12px; border-bottom:1px solid #eee;">
+                        Test how LLMs could augment user-facing microcopy, onboarding flows, or assistive agents
+                      </td>
+                    </tr>
+                    <tr style="background:#f7f8fa;">
+                      <td style="padding:12px; border-bottom:1px solid #eee;">LLM as a Tool</td>
+                      <td style="padding:12px; border-bottom:1px solid #eee;">
+                        LLMs are used to support research operations—e.g., transcript summarization, diary study synthesis, or survey generation
+                      </td>
+                      <td style="padding:12px; border-bottom:1px solid #eee;">
+                        Reduce researcher load during data collection and early synthesis while speeding up iteration cycles
+                      </td>
+                    </tr>
+                    <tr style="background:#f7f8fa;">
+                      <td style="padding:12px; border-bottom:1px solid #eee;">LLM-to-Human Comparison</td>
+                      <td style="padding:12px; border-bottom:1px solid #eee;">
+                        LLMs stand in for participants (“silicon samples”) to pretest studies or simulate edge cases
+                      </td>
+                      <td style="padding:12px; border-bottom:1px solid #eee;">
+                        Explore how synthetic users might predict or pressure-test user journeys before rollout
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            
+              <p>
+                Each category reflects not only a use of LLMs, but a different mental model of what role LLMs should play in research:
+                as a generator, a collaborator, or a proxy.
+              </p>
+
+              <section class="case-deepdive">
+                <h2>From Literature to Practice: What LLMs Actually Do for UX Research</h2>
+              
+                <p>
+                  While LLM adoption is accelerating across industry, the literature reveals a gap between 
+                  how these models are <em>used</em> and how well they are <em>understood</em>. In our review, 
+                  most empirical studies demonstrated feasibility—showing that LLMs can generate content, 
+                  summarize text, or simulate users—but fewer addressed when these uses meaningfully improve 
+                  research outcomes versus introducing hidden risk.
+                </p>
+              
+                <p>
+                  Below, I translate each of the three dominant LLM use cases identified in the literature into 
+                  concrete UX research applications, highlighting both their value and their limits.
+                </p>
+              
+                <h3>1. LLM Output Testing: Evaluating AI-Generated Experiences</h3>
+                <figure>
+                    <img 
+                    src="https://alice-ji.github.io/portfolio/assets/llmuxr1.png" 
+                    style="
+                        max-height:240px;
+                        width:auto;
+                        max-width:100%;
+                        display:block;
+                        margin:0 auto;
+                    "/>
+                  </figure>
+              
+                <p>
+                  In advertising and communication research, LLM output testing is the most common application. 
+                  Studies in this category ask a simple question: <em>how good is the content produced by an LLM?</em> 
+                  Researchers evaluate AI-generated ad copy, headlines, health information, or persuasive messages 
+                  using human participants, expert judges, or content analysis.
+                </p>
+              
+                <p>
+                  Findings across this literature are consistent: LLM-generated content often performs 
+                  surprisingly well on surface-level measures like fluency, clarity, and perceived quality. 
+                  In some cases, participants cannot reliably distinguish AI-generated content from human-authored 
+                  material. However, deeper issues—such as bias, hallucination, or subtle misinformation—frequently 
+                  go unnoticed without expert review.
+                </p>
+              
+                <p>
+                  <strong>Translation to UXR:</strong>  
+                  For product teams, this maps directly onto evaluating AI-powered features such as onboarding 
+                  copy, help center responses, chatbots, search summaries, or recommendation explanations.
+                </p>
+              
+                <p>
+                  Rather than asking “Is this AI good?”, UXR reframes the question as:
+                </p>
+              
+                <ul>
+                  <li>Do users trust AI-generated explanations?</li>
+                  <li>Where does AI output feel helpful versus uncanny or overconfident?</li>
+                  <li>Which errors are visible to users—and which quietly degrade decision-making?</li>
+                </ul>
+              
+                <p>
+                  In practice, LLM output testing becomes a form of <em>experience validation</em>, where the 
+                  researcher’s role is not to optimize language quality alone, but to surface downstream effects 
+                  on trust, comprehension, and behavior.
+                </p>
+              
+                <h3>2. LLMs as Research Tools: Accelerating (and Reshaping) Research Workflows</h3>
+                <figure>
+                    <img 
+                    src="https://alice-ji.github.io/portfolio/assets/llmuxr2.png"
+                    style="
+                        max-height:240px;
+                        width:auto;
+                        max-width:100%;
+                        display:block;
+                        margin:0 auto;
+                    "/>
+                  </figure>
+              
+                <p>
+                  The second major category identified in the literature positions LLMs not as objects of study, 
+                  but as instruments that assist the research process itself. These studies use LLMs to summarize 
+                  transcripts, classify sentiment, generate survey items, assist with literature reviews, or 
+                  synthesize qualitative data.
+                </p>
+              
+                <p>
+                  Across both quantitative and qualitative research, LLM tools consistently improved speed and 
+                  scale. Researchers reported faster synthesis cycles, lower costs, and increased feasibility 
+                  for large datasets that would otherwise be prohibitive to analyze manually.
+                </p>
+              
+                <p>
+                  However, the literature also surfaces important caveats. LLMs tend to:
+                </p>
+              
+                <ul>
+                  <li>Overrepresent dominant themes while underweighting minority or edge-case perspectives</li>
+                  <li>Produce confident summaries without transparent attribution</li>
+                  <li>Mask uncertainty by smoothing over contradictions in participant data</li>
+                </ul>
+              
+                <p>
+                  <strong>Translation to UXR:</strong>  
+                  In real product teams, this category aligns with day-to-day research operations:
+                </p>
+              
+                <ul>
+                  <li>Summarizing dozens of interview transcripts after a sprint</li>
+                  <li>Clustering open-ended survey responses</li>
+                  <li>Drafting research readouts for stakeholders</li>
+                </ul>
+              
+                <p>
+                  When applied thoughtfully, LLMs function best as <em>first-pass synthesizers</em> rather than 
+                  final arbiters of insight. They are effective at pattern surfacing, but not pattern interpretation.
+                </p>
+              
+                <p>
+                  This shifts the researcher’s role from manual coding toward sensemaking, validation, and 
+                  triangulation—deciding which patterns matter, which are artifacts of the model, and which 
+                  warrant deeper investigation.
+                </p>
+              
+                <h3>3. LLM-to-Human Comparison: Simulated Users and “Silicon Samples”</h3>
+                <figure>
+                    <img 
+                    src="https://alice-ji.github.io/portfolio/assets/llmuxr3.png"
+                    style="
+                        max-height:240px;
+                        width:auto;
+                        max-width:100%;
+                        display:block;
+                        margin:0 auto;
+                    "/>
+                  </figure>
+              
+                <p>
+                  The most conceptually provocative category in the literature treats LLMs as stand-ins for human 
+                  participants. These studies compare LLM-generated responses to human data across classic 
+                  experiments, persuasive tasks, or consumer decision scenarios.
+                </p>
+              
+                <p>
+                  Results are mixed but revealing. LLMs often approximate average human responses remarkably well, 
+                  particularly for well-studied populations and mainstream viewpoints. However, they struggle with:
+                </p>
+              
+                <ul>
+                  <li>Novel or rapidly changing contexts</li>
+                  <li>Marginalized or underrepresented perspectives</li>
+                  <li>Embodied, emotional, or situational constraints</li>
+                </ul>
+              
+                <p>
+                  <strong>Translation to UXR:</strong>  
+                  While LLMs should not replace human participants, they offer compelling value earlier in the 
+                  research lifecycle.
+                </p>
+              
+                <p>
+                  In practice, this looks like:
+                </p>
+              
+                <ul>
+                  <li>Pressure-testing user flows before recruiting participants</li>
+                  <li>Simulating edge cases to identify blind spots in journey maps</li>
+                  <li>Pre-validating survey logic or experimental manipulations</li>
+                </ul>
+              
+                <p>
+                  Rather than acting as “synthetic users,” LLMs function best as 
+                  <em>hypothesis stress-testers</em>—revealing where assumptions break down before real users 
+                  ever see the product.
+                </p>
+              
+                <p>
+                  Importantly, this use case raises ethical and epistemological questions that mirror those 
+                  surfaced in advertising research: what does it mean to generalize from a model trained on 
+                  historical data, and whose experiences are implicitly encoded—or excluded—in that training?
+                </p>
+              
+                <p>
+                  For UX researchers, this reinforces a core principle: LLMs can inform research design, but 
+                  they cannot replace the lived complexity of human experience.
+                </p>
+              </section> 
+
+              <p style="text-align:center; letter-spacing:0.6em; color:#999;">···</p>
+              
+              <p>
+                Much of the hype around LLMs in UX research collapses wildly different practices into a single narrative: 
+                <em>AI will automate research.</em> The literature tells a more nuanced story. What emerges instead is a 
+                set of distinct roles that LLMs play at different moments in the research process—sometimes accelerating 
+                work, sometimes reshaping it, and sometimes introducing new risks.
+              </p>
+              
+              <p>
+                To move beyond abstract claims, the following framework situates LLM use within the UX research lifecycle, 
+                showing how these tools are currently applied from planning through activation, and where their strengths—
+                and limits—are most pronounced.
+              </p>
+              
+              <figure class="case-graphic">
+                <img src="https://alice-ji.github.io/portfolio/assets/llm-uxr-lifecycle.png" alt="LLM usage across the UX research lifecycle" />
+              </figure>
+              
+
+              <section class="case-implications">
+                <h2>Design Implications for UXR Practice</h2>
+                <ul>
+                  <li>UX research teams need clearer frameworks for where LLMs add rigor vs. risk</li>
+                  <li>Token limits, hallucination risk, and training bias must be actively managed—not assumed</li>
+                  <li>LLMs can assist with activation (e.g., generating highlight reels, gamified debriefs) just as much as collection</li>
+                  <li>Participant replacement is not the future—but pretesting with LLMs could save teams time and budget</li>
+                </ul>
+              </section>
+              
+              <section class="case-conclusion">
+                <h2>Why This Matters</h2>
+                <p>
+                  The future of UX research will be shaped not just by what we study, but how we study it. As AI-native companies 
+                  lean into LLMs, researchers must develop internal literacy around LLM capabilities, constraints, and 
+                  implementation. This case study draws from academic research to inform applied methods that are scalable, 
+                  ethically grounded, and deeply aware of the cognitive gaps these tools still present.
+                </p>
+              </section>
+            </section>
+          </section>
+
+      <section class="contact-section">
+        <a href="mailto:rji3@illinois.edu" class="contact-email"
+          >rji3@illinois.edu</a
+        >
+        <div class="social-links">
+          <a
+            href="https://www.linkedin.com/in/alice-ji-8a4b2a161/"
+            target="_blank"
+          >
+            <img
+              src="https://alice-ji.github.io/portfolio/assets/LinkedIn.png"
+              alt="LinkedIn"
+              title="LinkedIn"
+            />
+          </a>
+          <a
+            href="https://scholar.google.com/citations?hl=en&user=CVlgqCAAAAAJ"
+            target="_blank"
+          >
+            <img
+              src="https://alice-ji.github.io/portfolio/assets/GoogleScholarLogo.png"
+              alt="Google Scholar"
+              title="Google Scholar"
+            />
+          </a>
+          <a href="https://orcid.org/0009-0009-3730-8272" target="_blank">
+            <img
+              src="https://alice-ji.github.io/portfolio/assets/ORCID.png"
+              alt="ORCID"
+              title="ORCID"
+            />
+          </a>
+          <a href="https://github.com/Alice-Ji" target="_blank">
+            <img
+              src="https://alice-ji.github.io/portfolio/assets/github.png"
+              alt="Github"
+              title="Github"
+            />
+          </a>
+          <a href="https://medium.com/@alice-ji" target="_blank">
+            <img
+              src="https://alice-ji.github.io/portfolio/assets/medium.png"
+              alt="Medium"
+              title="Medium"
+            />
+          <a href="https://madlabresearch.web.illinois.edu/" target="_blank">
+            <img
+              src="https://alice-ji.github.io/portfolio/assets/madlab.png"
+              alt="MadLab"
+              title="MadLab"
+            />
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <footer>&copy; 2026 Alice Ji</footer>
+
+    <script>
+      const btn = document.getElementById("dark-toggle");
+      if (localStorage.getItem("dark-mode") === "true") {
+        document.body.classList.add("dark-mode");
+        btn.textContent = "☀️ Light Mode";
+      }
+      btn.onclick = () => {
+        document.body.classList.toggle("dark-mode");
+        const enabled = document.body.classList.contains("dark-mode");
+        btn.textContent = enabled ? "☀️ Light Mode" : "🌒 Dark Mode";
+        localStorage.setItem("dark-mode", enabled);
+      };
+    </script>
+  </body>
+</html>
