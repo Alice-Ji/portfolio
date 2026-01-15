@@ -113,6 +113,8 @@ main {
   background: var(--surface);
   border-radius: var(--radius-lg);
   padding: 20px 20px;
+  width: min(80vw, 1300px);
+  margin-inline: auto;
 }
 
 .profile-header {
@@ -242,10 +244,14 @@ main {
   display: grid;
   grid-template-columns: 1fr;
   gap: 2.5rem;
+  width: min(80vw, 1300px);
+  margin-inline: auto;
 }
 
 .featured-grid {
   margin-bottom: 4rem;
+  width: min(80vw, 1300px);
+  margin-inline: auto;
 }
 
 .featured-card {
