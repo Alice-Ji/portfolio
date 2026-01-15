@@ -21,6 +21,7 @@
 body.dark-mode {
   --text-body: #e7e9ec;
   --text-strong: #f3f4f6;
+  --card: #2a2b3d;
 }
 
 /* =========================================================
@@ -445,16 +446,20 @@ body.dark-mode {
   color: #e7e9ec;
 }
 
+body.dark-mode h3 {
+  color: #e1cfae;
+}
+
+body.dark-mode .contact-email {
+  color: #e1cfae;
+}
+
 body.dark-mode .navbar {
   background: rgba(35, 36, 51, 0.9);
 }
 
 body.dark-mode .nav-link {
   color: #e1cfae;
-}
-
-body.dark-mode .profile-card {
-  background: #232433;
 }
 
 body.dark-mode .project-card {
@@ -467,6 +472,12 @@ body.dark-mode footer {
 
 body.dark-mode .cred-strip {
   border-top-color: rgba(255, 255, 255, 0.12);
+}
+
+body.dark-mode table,
+body.dark-mode th,
+body.dark-mode td {
+  color: #1c2233;
 }
 
 /* =========================================================
@@ -507,6 +518,15 @@ body.dark-mode .cred-strip {
 
   .featured-card .card-media {
     height: 240px;
+  }
+
+  .case-study img,
+  .case-study video {
+    width: 100vw;
+    max-width: 100vw;
+    margin-left: calc(50% - 50vw);
+    margin-right: calc(50% - 50vw);
+    border-radius: 12px;
   }
 }
 
