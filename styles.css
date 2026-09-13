@@ -259,8 +259,11 @@ main {
 }
 
 .featured-card.project-card {
-  display: grid;
-  grid-template-columns: 1.2fr 1fr;
+  display: block;
+}
+
+.featured-card .card-media {
+  height: 360px;
 }
 
 .featured-card .card-media {
