@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Alice Ji | Portfolio</title>
+  <link rel="icon" href="assets/favicon.png">
+  <style>
+    :root { font-family: system-ui, sans-serif; color: #17263a; background: #eaf0f9; }
+    body { margin: 0; padding: 20px 12px; }
+    header { max-width: 680px; margin: 0 auto 18px; }
+    h1 { font-size: 1.3rem; margin: 0 0 12px; }
+    .controls { display: flex; flex-wrap: wrap; gap: 12px 20px; align-items: center; }
+    nav { display: flex; flex-wrap: wrap; gap: 12px; }
+    a { color: #2453aa; text-underline-offset: 3px; }
+    select { font: inherit; margin-left: 6px; padding: 5px; color: inherit; }
+    iframe {
+      display: block;
+      box-sizing: content-box;
+      width: min(var(--phone-width, 390px), calc(100vw - 26px));
+      height: clamp(420px, calc(100dvh - 136px), 850px);
+      margin: 0 auto;
+      border: 1px solid #b8c8de;
+      border-radius: 14px;
+      background: #fff;
+      box-shadow: 0 8px 28px #2453aa19;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Mobile portfolio preview</h1>
+    <div class="controls">
+      <nav aria-label="Preview pages">
+        <a href="index.html" target="phone-preview">Homepage</a>
+        <a href="project/aws.html" target="phone-preview">AWS case study</a>
+        <a href="project/aws.html#finding-2-continued-use-depended-on-fit-with-existing-work" target="phone-preview">Adoption cards</a>
+      </nav>
+      <label>Viewport <select id="viewport"><option value="320">320 px</option><option value="390" selected>390 px</option><option value="430">430 px</option></select></label>
+    </div>
+  </header>
+  <iframe name="phone-preview" title="Portfolio at a phone-sized viewport" src="index.html"></iframe>
+  <script>
+    const width = document.querySelector('#viewport');
+    const preview = document.querySelector('iframe');
+    width.addEventListener('change', () => preview.style.setProperty('--phone-width', width.value + 'px'));
+  </script>
+</body>
+</html>
