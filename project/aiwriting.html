@@ -1,26 +1,13 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-  <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link
-      href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;700&display=swap"
-      rel="stylesheet"
-    />
-    <meta charset="UTF-8" />
-    <title>Alice Ji – Portfolio</title>
-    <meta
-      name="description"
-      content="Portfolio of Alice Ji. A showcase of projects bridging research and industry applications."
-    />
-    <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <link rel="stylesheet" href="../styles.css" />
-    <link
-      rel="icon"
-      href="../assets/favicon.png"
-      type="image/png"
-    />
-  </head>
-  <!-- Google tag (gtag.js) -->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Alice Ji | Portfolio</title>
+  <link rel="icon" type="image/png" href="../assets/favicon.png">
+  <script src="../theme.js"></script>
+  <link rel="stylesheet" href="../styles.css">
+  <script src="../portfolio.js" defer></script>
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-N4BK6G9CMW"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
@@ -28,33 +15,37 @@
   gtag('js', new Date());
 
   gtag('config', 'G-N4BK6G9CMW');
-</script>
-  <body>
-    <nav class="navbar">
-      <a href="../index.html">
-        <img
-          src="https://alice-ji.github.io/portfolio/assets/favicon.png"
-          style="width: 24px; height: 24px;"
-        />
-      </a>
-      <a href="../index.html" class="nav-link">Home</a>
-      <button id="dark-toggle" class="dark-toggle">🌒 Dark Mode</button>
+</script></head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="site-header wrap" id="top">
+    <a class="wordmark" href="../index.html"><img src="../assets/favicon.png" alt="" width="34" height="34"> Alice Ji</a>
+    <nav aria-label="Portfolio">
+      <a href="../index.html#work">Work</a>
+      <a class="resume-link" href="../resume.html">Résumé</a>
+      <button class="theme-toggle" type="button" role="switch" aria-label="Dark mode" aria-checked="false" hidden>
+        <span class="theme-thumb" aria-hidden="true">
+          <svg class="theme-sun" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" focusable="false">
+            <circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M2 12h2m16 0h2M5 5l1.5 1.5m11 11L19 19M19 5l-1.5 1.5m-11 11L5 19"/>
+          </svg>
+          <svg class="theme-moon" viewBox="0 0 24 24" width="16" height="16" fill="currentColor" focusable="false">
+            <path d="M20.5 15.1A9 9 0 0 1 8.9 3.5 9.1 9.1 0 1 0 20.5 15.1Z"/>
+          </svg>
+        </span>
+      </button>
     </nav>
-
-    <a href="../index.html" id="back-btn" title="Back to portfolio">
-      &#8678; Back
-    </a>
-    
-    <main>
-        <section class="case-study">
+  </header>
+  <main id="main">
+    <div class="wrap case-page">
+      <a class="nav-button back-button" href="../index.html#work">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m14 6-6 6 6 6"/></svg>
+        Back
+      </a>
+      <div class="case-layout">
+        <section class="case-study" aria-labelledby="case-title">
 
             <header class="case-header">
-                <figure>
-                    <img
-                      src="https://alice-ji.github.io/portfolio/assets/aiwriting-card.png"
-                    />
-                  </figure>    
-              <h1>The Ship of Theseus Paradox in AI-Assisted Writing</h1>
+                <p class="eyebrow">Case study</p><h1 id="case-title">The Ship of Theseus Paradox in AI-Assisted Writing</h1>
           
               <p class="subtitle">
                 Product-facing UX research translating user perceptions of AI authorship 
@@ -62,26 +53,21 @@
                 into actionable guidance for AI writing tool design.
               </p>
 
+              <figure class="case-cover">
+                    <img src="../assets/aiwriting-card.png" alt="">
+                  </figure>    
               <p class="subtitle">
                 Originally published on
-                <a
-                  href="https://uxdesign.cc/the-ship-of-theseus-problem-in-ai-writing-9435a4a370fa"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
+                <a href="https://uxdesign.cc/the-ship-of-theseus-problem-in-ai-writing-9435a4a370fa" target="_blank" rel="noopener noreferrer">
                   UX Collective
                 </a>
-                <img 
-                  src="https://alice-ji.github.io/portfolio/assets/uxcollective-icon.png" 
-                  alt="UX Collective"
-                  style="
+                <img src="../assets/uxcollective-icon.png" alt="UX Collective" style="
                     height:0.9em;
                     width:auto;
                     margin-left:0.25em;
                     vertical-align:-0.1em;
                     opacity:0.85;
-                  "
-                  >
+                  " loading="lazy">
               </p>
 
               <div class="case-meta">
@@ -94,7 +80,7 @@
             </header>
           
             <section class="case-glance">
-              <h2>At a Glance</h2>
+              <h2 id="at-a-glance">At a Glance</h2>
               <ul>
                 <li>Evaluated how repeated AI interventions impact perceived authorship and trust</li>
                 <li>Compared behavior across personal, academic, and functional writing contexts</li>
@@ -104,7 +90,7 @@
             </section>
           
             <section class="case-narrative">
-              <h2>Full Case Narrative</h2>
+              <h2 id="full-case-narrative">Full Case Narrative</h2>
           
               <p>
                 AI writing tools have quietly become infrastructure. For many users, they function
@@ -130,7 +116,7 @@
             </section>
           
             <section class="case-question">
-              <h2>Research Question</h2>
+              <h2 id="research-question">Research Question</h2>
               <p><em>
                 Framed as a product question:
               </em></p>              
@@ -146,11 +132,9 @@
             </section>
           
             <section class="case-design">
-              <h2>Study Design</h2>
+              <h2 id="study-design">Study Design</h2>
               <figure>
-                <img
-                  src="https://alice-ji.github.io/portfolio/assets/theseus1.png"
-                />
+                <img src="../assets/theseus1.png" alt="" loading="lazy">
               </figure>              
               <p>
                 To explore these questions, I designed a within-subjects experimental study that
@@ -187,7 +171,7 @@
             </section>
           
             <section class="case-methods">
-              <h2>Methods & Analysis</h2>
+              <h2 id="methods-analysis">Methods &amp; Analysis</h2>
               <ul>
                 <li><strong>Platform:</strong> Qualtrics</li>
                 <li><strong>Sample:</strong> Convenience sample (friends, family, online volunteers)</li>
@@ -206,11 +190,9 @@
             </section>
           
             <section class="case-findings">
-              <h2>Key Behavioral and UX Insights</h2>
+              <h2 id="key-behavioral-and-ux-insights">Key Behavioral and UX Insights</h2>
               <figure>
-                <img
-                  src="https://alice-ji.github.io/portfolio/assets/theseus2.png"
-                />
+                <img src="../assets/theseus2.png" alt="" loading="lazy">
             </figure> 
           
               <h3>1. Perceived authorship decays, but not uniformly</h3>
@@ -253,7 +235,7 @@
             </section>
           
             <section class="case-interpretation">
-              <h2>Interpretation</h2>
+              <h2 id="interpretation">Interpretation</h2>
               <p>
                 Resistance to AI writing assistance is not driven by general mistrust of AI quality.
                 Instead, it reflects differences in psychological ownership and emotional risk.
@@ -272,7 +254,7 @@
             </section>
           
             <section class="case-implications">
-              <h2>Product & UX Implications for AI Writing Systems</h2>
+              <h2 id="product-ux-implications-for-ai-writing-systems">Product &amp; UX Implications for AI Writing Systems</h2>
               <ul>
                 <li>Scale assistance with emotional intimacy of the writing context</li>
                 <li>Make authorship boundaries visible by showing what changed and why</li>
@@ -283,7 +265,7 @@
             </section>
           
             <section class="case-conclusion">
-              <h2>Why This Matters</h2>
+              <h2 id="why-this-matters">Why This Matters</h2>
               <p>
                 As AI writing tools become ubiquitous, users increasingly feel pressure not only to
                 write authentically, but to prove that they did. Respecting psychological 
@@ -297,72 +279,40 @@
               </p>
             </section>
           
-          </section>          
-
-
-      <section class="contact-section">
-        <a href="mailto:rji3@illinois.edu" class="contact-email"
-          >rji3@illinois.edu</a
-        >
+          </section>
+        <aside class="case-aside">
+          <nav aria-label="Case study sections">
+            <p class="eyebrow">On this page</p>
+            <ul><li><a href="#at-a-glance">At a Glance</a></li><li><a href="#full-case-narrative">Full Case Narrative</a></li><li><a href="#research-question">Research Question</a></li><li><a href="#study-design">Study Design</a></li><li><a href="#methods-analysis">Methods &amp; Analysis</a></li><li><a href="#key-behavioral-and-ux-insights">Key Behavioral and UX Insights</a></li><li><a href="#interpretation">Interpretation</a></li><li><a href="#product-ux-implications-for-ai-writing-systems">Product &amp; UX Implications for AI Writing Systems</a></li><li><a href="#why-this-matters">Why This Matters</a></li></ul>
+          </nav>
+        </aside>
+      </div>
+      <div class="case-end"><a class="primary" href="../index.html#work">Explore more work</a><section class="contact-section">
+        <a href="mailto:rji3@illinois.edu" class="contact-email">rji3@illinois.edu</a>
         <div class="social-links">
-          <a
-            href="https://www.linkedin.com/in/alice-ji-8a4b2a161/"
-            target="_blank"
-          >
-            <img
-              src="https://alice-ji.github.io/portfolio/assets/LinkedIn.png"
-              alt="LinkedIn"
-              title="LinkedIn"
-            />
+          <a href="https://www.linkedin.com/in/alice-ji-8a4b2a161/" target="_blank" rel="noopener noreferrer">
+            <img src="../assets/LinkedIn.png" alt="LinkedIn" title="LinkedIn">
           </a>
-          <a
-            href="https://scholar.google.com/citations?hl=en&user=CVlgqCAAAAAJ"
-            target="_blank"
-          >
-            <img
-              src="https://alice-ji.github.io/portfolio/assets/GoogleScholarLogo.png"
-              alt="Google Scholar"
-              title="Google Scholar"
-            />
+          <a href="https://scholar.google.com/citations?hl=en&amp;user=CVlgqCAAAAAJ" target="_blank" rel="noopener noreferrer">
+            <img src="../assets/GoogleScholarLogo.png" alt="Google Scholar" title="Google Scholar">
           </a>
-          <a href="https://github.com/Alice-Ji" target="_blank">
-            <img
-              src="https://alice-ji.github.io/portfolio/assets/github.png"
-              alt="Github"
-              title="Github"
-            />
+          <a href="https://github.com/Alice-Ji" target="_blank" rel="noopener noreferrer">
+            <img src="../assets/github.png" alt="Github" title="Github">
           </a>
-          <a href="https://medium.com/@alice-ji" target="_blank">
-            <img
-              src="https://alice-ji.github.io/portfolio/assets/medium.png"
-              alt="Medium"
-              title="Medium"
-            />
-          <a href="https://madlabresearch.web.illinois.edu/" target="_blank">
-            <img
-              src="https://alice-ji.github.io/portfolio/assets/madlab.png"
-              alt="MadLab"
-              title="MadLab"
-            />
+          <a href="https://medium.com/@alice-ji" target="_blank" rel="noopener noreferrer">
+            <img src="../assets/medium.png" alt="Medium" title="Medium">
+          </a><a href="https://madlabresearch.web.illinois.edu/" target="_blank" rel="noopener noreferrer">
+            <img src="../assets/madlab.png" alt="MadLab" title="MadLab">
           </a>
         </div>
-      </section>
-    </main>
-
-    <footer>&copy; 2026 Alice Ji</footer>
-
-    <script>
-      const btn = document.getElementById("dark-toggle");
-      if (localStorage.getItem("dark-mode") === "true") {
-        document.body.classList.add("dark-mode");
-        btn.textContent = "☀️ Light Mode";
-      }
-      btn.onclick = () => {
-        document.body.classList.toggle("dark-mode");
-        const enabled = document.body.classList.contains("dark-mode");
-        btn.textContent = enabled ? "☀️ Light Mode" : "🌒 Dark Mode";
-        localStorage.setItem("dark-mode", enabled);
-      };
-    </script>
-  </body>
+      </section></div>
+    </div>
+  </main>
+  <footer class="site-footer wrap">
+    <span>© 2026 Alice Ji</span>
+    <a class="nav-button up-button" href="#top" aria-label="Back to top" title="Back to top">
+      <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m6 14 6-6 6 6"/></svg>
+    </a>
+  </footer>
+</body>
 </html>

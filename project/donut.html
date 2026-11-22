@@ -1,63 +1,56 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-  <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link
-      href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;700&display=swap"
-      rel="stylesheet"
-    />
-    <meta charset="UTF-8" />
-    <title>Alice Ji – Portfolio</title>
-    <meta
-      name="description"
-      content="Portfolio of Alice Ji. A showcase of projects bridging research and industry applications."
-    />
-    <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <link rel="stylesheet" href="../styles.css" />
-    <link
-      rel="icon"
-      href="https://alice-ji.github.io/portfolio/assets/favicon.png"
-      type="image/png"
-    />
-  </head>
-  <body>
-    <nav class="navbar">
-      <a href="../index.html">
-        <img
-          src="https://alice-ji.github.io/portfolio/assets/favicon.png"
-          style="width: 24px; height: 24px;"
-        />
-      </a>
-      <a href="../index.html" class="nav-link">Home</a>
-      <a href="../resume.html" class="nav-link">Resume</a>
-      <button id="dark-toggle" class="dark-toggle">🌒 Dark Mode</button>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Alice Ji | Portfolio</title>
+  <link rel="icon" type="image/png" href="../assets/favicon.png">
+  <script src="../theme.js"></script>
+  <link rel="stylesheet" href="../styles.css">
+  <script src="../portfolio.js" defer></script>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="site-header wrap" id="top">
+    <a class="wordmark" href="../index.html"><img src="../assets/favicon.png" alt="" width="34" height="34"> Alice Ji</a>
+    <nav aria-label="Portfolio">
+      <a href="../index.html#work">Work</a>
+      <a class="resume-link" href="../resume.html">Résumé</a>
+      <button class="theme-toggle" type="button" role="switch" aria-label="Dark mode" aria-checked="false" hidden>
+        <span class="theme-thumb" aria-hidden="true">
+          <svg class="theme-sun" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" focusable="false">
+            <circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M2 12h2m16 0h2M5 5l1.5 1.5m11 11L19 19M19 5l-1.5 1.5m-11 11L5 19"/>
+          </svg>
+          <svg class="theme-moon" viewBox="0 0 24 24" width="16" height="16" fill="currentColor" focusable="false">
+            <path d="M20.5 15.1A9 9 0 0 1 8.9 3.5 9.1 9.1 0 1 0 20.5 15.1Z"/>
+          </svg>
+        </span>
+      </button>
     </nav>
-
-    <a href="../index.html" id="back-btn" title="Back to portfolio">
-      &#8678; Back
-    </a>
-    
-    <main>
-
-        <section class="case-study">
+  </header>
+  <main id="main">
+    <div class="wrap case-page">
+      <a class="nav-button back-button" href="../index.html#work">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m14 6-6 6 6 6"/></svg>
+        Back
+      </a>
+      <div class="case-layout">
+        <section class="case-study" aria-labelledby="case-title">
 
           <header class="case-header">
-            <figure>
-              <img
-                src="https://alice-ji.github.io/portfolio/assets/donut-card.png"
-                alt="Donut Shop Ordering App"
-              />
-            </figure>
-
-            <h1>Donut Shop Ordering App</h1>
+            <p class="eyebrow">Case study</p><h1 id="case-title">Donut Shop Ordering App</h1>
 
             <p class="subtitle">
               How might we reduce choice paralysis in a highly customizable ordering experience
               without taking away the flexibility customers enjoyed?
             </p>
 
+            <figure class="case-cover">
+              <img src="../assets/donut-card.png" alt="Donut Shop Ordering App">
+            </figure>
+
             <div class="case-meta">
-              <p><strong>Context:</strong> Local food business, in-store + mobile ordering</p>
+              <p><strong>Client:</strong> Local donut shop</p><p><strong>Context:</strong> Local food business, in-store + mobile ordering</p>
               <p><strong>Role:</strong> UX Researcher, Product Designer</p>
               <p><strong>Methods:</strong> Field observation, informal interviews, rapid usability testing</p>
               <p><strong>Tools:</strong> Figma, Photoshop, HTML, CSS, JavaScript, React, Netlify</p>
@@ -66,7 +59,7 @@
           </header>
 
           <section class="case-glance">
-            <h2>At a Glance</h2>
+            <h2 id="at-a-glance">At a Glance</h2>
             <ul>
               <li>Turned a vague business concern — “the menu is overwhelming” — into specific UX failure modes</li>
               <li>Prioritized three high-leverage interventions: structure the choices, visualize outcomes, and provide low-effort fallbacks</li>
@@ -76,7 +69,7 @@
           </section>
 
           <section class="case-context">
-            <h2>The Product Problem</h2>
+            <h2 id="the-product-problem">The Product Problem</h2>
 
             <p>
               The shop's build-your-own donut bar was popular because customers had dozens of
@@ -92,10 +85,7 @@
             </p>
 
             <figure>
-              <img
-                src="https://alice-ji.github.io/portfolio/assets/donut-chalkboard.png"
-                alt="Chaotic chalkboard donut menu"
-              >
+              <img src="../assets/donut-chalkboard.png" alt="Chaotic chalkboard donut menu" loading="lazy">
               <figcaption>
                 Before: dozens of choices were presented at once with little structure or feedback.
               </figcaption>
@@ -103,7 +93,7 @@
           </section>
 
           <section class="case-problem">
-            <h2>What I Observed</h2>
+            <h2 id="what-i-observed">What I Observed</h2>
 
             <ul>
               <li><strong>Choice overload:</strong> customers had to scan too many options at once</li>
@@ -118,16 +108,13 @@
             </p>
 
             <figure>
-              <img
-                src="https://alice-ji.github.io/portfolio/assets/donut-journey.png"
-                alt="Journey mapping for the donut ordering experience"
-              >
+              <img src="../assets/donut-journey.png" alt="Journey mapping for the donut ordering experience" loading="lazy">
               <figcaption>Journey map identifying moments of delight, hesitation, and intervention.</figcaption>
             </figure>
           </section>
 
           <section class="case-framework">
-            <h2>My Design Strategy</h2>
+            <h2 id="my-design-strategy">My Design Strategy</h2>
 
             <p>
               I treated the menu as a decision system rather than a catalog. Instead of asking
@@ -142,16 +129,13 @@
             </p>
 
             <figure>
-              <img
-                src="https://alice-ji.github.io/portfolio/assets/donut-prototype.png"
-                alt="Donut ordering prototype workflow"
-              >
+              <img src="../assets/donut-prototype.png" alt="Donut ordering prototype workflow" loading="lazy">
               <figcaption>From behavioral observation to a functional ordering prototype.</figcaption>
             </figure>
           </section>
 
           <section class="case-solution">
-            <h2>Key Product Decisions</h2>
+            <h2 id="key-product-decisions">Key Product Decisions</h2>
 
             <h3>1. Break One Big Decision Into Smaller Ones</h3>
 
@@ -162,10 +146,7 @@
             </p>
 
             <figure>
-              <img
-                src="https://alice-ji.github.io/portfolio/assets/donut-builder.gif"
-                alt="Categorized donut customization flow"
-              >
+              <img src="../assets/donut-builder.gif" alt="Categorized donut customization flow" loading="lazy">
             </figure>
 
             <p>
@@ -182,10 +163,7 @@
             </p>
 
             <figure>
-              <img
-                src="https://alice-ji.github.io/portfolio/assets/donut-visual.gif"
-                alt="Donut building in real time"
-              >
+              <img src="../assets/donut-visual.gif" alt="Donut building in real time" loading="lazy">
             </figure>
 
             <p>
@@ -203,17 +181,11 @@
             </p>
 
             <figure>
-              <img
-                src="https://alice-ji.github.io/portfolio/assets/donut-random.gif"
-                alt="Donut randomizer feature"
-              >
+              <img src="../assets/donut-random.gif" alt="Donut randomizer feature" loading="lazy">
             </figure>
 
             <figure>
-              <img
-                src="https://alice-ji.github.io/portfolio/assets/donut-nudge.gif"
-                alt="House Specials behavioral nudge"
-              >
+              <img src="../assets/donut-nudge.gif" alt="House Specials behavioral nudge" loading="lazy">
             </figure>
 
             <p>
@@ -224,7 +196,7 @@
           </section>
 
           <section class="case-flow">
-            <h2>From Prototype to End-to-End Flow</h2>
+            <h2 id="from-prototype-to-end-to-end-flow">From Prototype to End-to-End Flow</h2>
 
             <p>
               I built the experience beyond the customization screen so I could evaluate the
@@ -234,10 +206,7 @@
             </p>
 
             <figure>
-              <img
-                src="https://alice-ji.github.io/portfolio/assets/donut-checkout.gif"
-                alt="Checkout and receipt flow"
-              >
+              <img src="../assets/donut-checkout.gif" alt="Checkout and receipt flow" loading="lazy">
             </figure>
 
             <p>
@@ -247,7 +216,7 @@
           </section>
 
           <section class="case-outcome">
-            <h2>Validation in the Real Ordering Environment</h2>
+            <h2 id="validation-in-the-real-ordering-environment">Validation in the Real Ordering Environment</h2>
 
             <p>
               I conducted in-context usability testing with 12 customers, 
@@ -274,7 +243,7 @@
           </section>
 
           <section class="next-steps">
-            <h2>What I’d Do Next</h2>
+            <h2 id="what-i-d-do-next">What I’d Do Next</h2>
 
             <p>
               The project concluded after the in-context qualitative study, 
@@ -304,81 +273,44 @@
 
             <p>
               Explore the fully interactive prototype
-              <a
-                href="https://donutworks.netlify.app/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
+              <a href="https://donutworks.netlify.app/" target="_blank" rel="noopener noreferrer">
                 here
               </a>.
             </p>
           </section>
-
-        </section>
-
-      <section class="contact-section">
-        <a href="mailto:aliceji.work@gmail.com" class="contact-email"
-          >aliceji.work@gmail.com</a
-        >
+        <aside class="case-aside">
+          <nav aria-label="Case study sections">
+            <p class="eyebrow">On this page</p>
+            <ul><li><a href="#at-a-glance">At a Glance</a></li><li><a href="#the-product-problem">The Product Problem</a></li><li><a href="#what-i-observed">What I Observed</a></li><li><a href="#my-design-strategy">My Design Strategy</a></li><li><a href="#key-product-decisions">Key Product Decisions</a></li><li><a href="#from-prototype-to-end-to-end-flow">From Prototype to End-to-End Flow</a></li><li><a href="#validation-in-the-real-ordering-environment">Validation in the Real Ordering Environment</a></li><li><a href="#what-i-d-do-next">What I’d Do Next</a></li></ul>
+          </nav>
+        </aside>
+      </div>
+      <div class="case-end"><a class="primary" href="../index.html#work">Explore more work</a><section class="contact-section">
+        <a href="mailto:aliceji.work@gmail.com" class="contact-email">aliceji.work@gmail.com</a>
         <div class="social-links">
-          <a
-            href="https://www.linkedin.com/in/alice-ji-8a4b2a161/"
-            target="_blank"
-          >
-            <img
-              src="https://alice-ji.github.io/portfolio/assets/LinkedIn.png"
-              alt="LinkedIn"
-              title="LinkedIn"
-            />
+          <a href="https://www.linkedin.com/in/alice-ji-8a4b2a161/" target="_blank" rel="noopener noreferrer">
+            <img src="../assets/LinkedIn.png" alt="LinkedIn" title="LinkedIn">
           </a>
-          <a
-            href="https://scholar.google.com/citations?hl=en&user=CVlgqCAAAAAJ"
-            target="_blank"
-          >
-            <img
-              src="https://alice-ji.github.io/portfolio/assets/GoogleScholarLogo.png"
-              alt="Google Scholar"
-              title="Google Scholar"
-            />
+          <a href="https://scholar.google.com/citations?hl=en&amp;user=CVlgqCAAAAAJ" target="_blank" rel="noopener noreferrer">
+            <img src="../assets/GoogleScholarLogo.png" alt="Google Scholar" title="Google Scholar">
           </a>
-          <a href="https://github.com/Alice-Ji" target="_blank">
-            <img
-              src="https://alice-ji.github.io/portfolio/assets/github.png"
-              alt="Github"
-              title="Github"
-            />
+          <a href="https://github.com/Alice-Ji" target="_blank" rel="noopener noreferrer">
+            <img src="../assets/github.png" alt="Github" title="Github">
           </a>
-          <a href="https://medium.com/@alice-ji" target="_blank">
-            <img
-              src="https://alice-ji.github.io/portfolio/assets/medium.png"
-              alt="Medium"
-              title="Medium"
-            />
-          <a href="https://madlabresearch.web.illinois.edu/" target="_blank">
-            <img
-              src="https://alice-ji.github.io/portfolio/assets/madlab.png"
-              alt="MadLab"
-              title="MadLab"
-            />
+          <a href="https://medium.com/@alice-ji" target="_blank" rel="noopener noreferrer">
+            <img src="../assets/medium.png" alt="Medium" title="Medium">
+          </a><a href="https://madlabresearch.web.illinois.edu/" target="_blank" rel="noopener noreferrer">
+            <img src="../assets/madlab.png" alt="MadLab" title="MadLab">
           </a>
         </div>
-      </section>
-    </main>
-
-    <footer>&copy; 2026 Alice Ji</footer>
-
-    <script>
-      const btn = document.getElementById("dark-toggle");
-      if (localStorage.getItem("dark-mode") === "true") {
-        document.body.classList.add("dark-mode");
-        btn.textContent = "☀️ Light Mode";
-      }
-      btn.onclick = () => {
-        document.body.classList.toggle("dark-mode");
-        const enabled = document.body.classList.contains("dark-mode");
-        btn.textContent = enabled ? "☀️ Light Mode" : "🌒 Dark Mode";
-        localStorage.setItem("dark-mode", enabled);
-      };
-    </script>
-  </body>
+      </section></div>
+    </div>
+  </main>
+  <footer class="site-footer wrap">
+    <span>© 2026 Alice Ji</span>
+    <a class="nav-button up-button" href="#top" aria-label="Back to top" title="Back to top">
+      <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m6 14 6-6 6 6"/></svg>
+    </a>
+  </footer>
+</body>
 </html>

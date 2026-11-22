@@ -1,26 +1,13 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-  <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link
-      href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;700&display=swap"
-      rel="stylesheet"
-    />
-    <meta charset="UTF-8" />
-    <title>Alice Ji – Portfolio</title>
-    <meta
-      name="description"
-      content="Portfolio of Alice Ji. A showcase of projects bridging research and industry applications."
-    />
-    <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <link rel="stylesheet" href="../styles.css" />
-    <link
-      rel="icon"
-      href="../assets/favicon.png"
-      type="image/png"
-    />
-  </head>
-  <!-- Google tag (gtag.js) -->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Alice Ji | Portfolio</title>
+  <link rel="icon" type="image/png" href="../assets/favicon.png">
+  <script src="../theme.js"></script>
+  <link rel="stylesheet" href="../styles.css">
+  <script src="../portfolio.js" defer></script>
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-N4BK6G9CMW"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
@@ -28,48 +15,57 @@
   gtag('js', new Date());
 
   gtag('config', 'G-N4BK6G9CMW');
-</script>
-    <body>
-    <nav class="navbar">
-      <a href="../index.html">
-        <img
-          src="https://alice-ji.github.io/portfolio/assets/favicon.png"
-          style="width: 24px; height: 24px;"
-        />
-      </a>
-      <a href="../index.html" class="nav-link">Home</a>
-      <button id="dark-toggle" class="dark-toggle">🌒 Dark Mode</button>
+</script></head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="site-header wrap" id="top">
+    <a class="wordmark" href="../index.html"><img src="../assets/favicon.png" alt="" width="34" height="34"> Alice Ji</a>
+    <nav aria-label="Portfolio">
+      <a href="../index.html#work">Work</a>
+      <a class="resume-link" href="../resume.html">Résumé</a>
+      <button class="theme-toggle" type="button" role="switch" aria-label="Dark mode" aria-checked="false" hidden>
+        <span class="theme-thumb" aria-hidden="true">
+          <svg class="theme-sun" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" focusable="false">
+            <circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M2 12h2m16 0h2M5 5l1.5 1.5m11 11L19 19M19 5l-1.5 1.5m-11 11L5 19"/>
+          </svg>
+          <svg class="theme-moon" viewBox="0 0 24 24" width="16" height="16" fill="currentColor" focusable="false">
+            <path d="M20.5 15.1A9 9 0 0 1 8.9 3.5 9.1 9.1 0 1 0 20.5 15.1Z"/>
+          </svg>
+        </span>
+      </button>
     </nav>
-
-    <a href="../index.html" id="back-btn" title="Back to portfolio">
-      &#8678; Back
-    </a>
-    
-    <main>
-        <section class="case-study">
+  </header>
+  <main id="main">
+    <div class="wrap case-page">
+      <a class="nav-button back-button" href="../index.html#work">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m14 6-6 6 6 6"/></svg>
+        Back
+      </a>
+      <div class="case-layout">
+        <section class="case-study" aria-labelledby="case-title">
 
   <header class="case-header">
-    <figure>
-      <img src="https://alice-ji.github.io/portfolio/assets/gacha-card.png" alt="Gacha Behavioral Economies hero image" />
-    </figure>
-
-    <h1>Gacha Behavioral Economics</h1>
+    <p class="eyebrow">Case study</p><h1 id="case-title">Gacha Behavioral Economics</h1>
 
     <p class="subtitle">
       A modular experimental platform for studying player behavior and monetization in randomized reward systems
     </p>
+
+    <figure class="case-cover">
+      <img src="../assets/gacha-card.png" alt="Gacha Behavioral Economies hero image">
+    </figure>
 
     <div class="case-meta">
       <p><strong>Role:</strong> Research Prototyper</p>
       <p><strong>What I Built:</strong> Instrumented gacha + battle + economy testbed (HTML/JavaScript)</p>
       <p><strong>Methods:</strong> Experimental design, telemetry logging, A/B configuration of mechanics</p>
       <p><strong>Tools:</strong> Figma, Photoshop, HTML/CSS/JS, Google Apps Script, Google Sheets, R/Python (analysis-ready logs)</p>
-      <p><strong>Focus:</strong> Choice architecture, reward uncertainty, pricing & framing, progression pressure</p>
+      <p><strong>Focus:</strong> Choice architecture, reward uncertainty, pricing &amp; framing, progression pressure</p>
     </div>
   </header>
 
   <section class="case-glance">
-    <h2>At a Glance</h2>
+    <h2 id="at-a-glance">At a Glance</h2>
     <ul>
       <li>Built a <strong>fully functional gacha battle game</strong> as a reusable research instrument (not a one-off game concept)</li>
       <li>Separated content assets from mechanics so experiments can be reconfigured quickly</li>
@@ -78,16 +74,13 @@
     </ul>
   </section>
 
-  <video width="100%" autoplay muted loop>
-    <source
-      src="https://alice-ji.github.io/portfolio/assets/gacha-demo2.mp4"
-      type="video/mp4"
-    />
+  <video width="100%" autoplay muted loop preload="metadata">
+    <source src="../assets/gacha-demo2.mp4" type="video/mp4"></source>
     Your browser does not support the video tag.
   </video>
 
   <section class="case-narrative">
-    <h2>What This Is (and Isn’t)</h2>
+    <h2 id="what-this-is-and-isn-t">What This Is (and Isn’t)</h2>
 
     <p>
       Mobile games increasingly rely on gacha mechanics such as randomized rewards, limited-time banners,
@@ -111,14 +104,14 @@
     </p>
 
     <figure>
-      <img src="https://alice-ji.github.io/portfolio/assets/gacha-flow.png" alt="Prototype">
+      <img src="../assets/gacha-flow.png" alt="Prototype" loading="lazy">
       <figcaption>Prototyping Workflow</figcaption>
     </figure>
     
   </section>
 
   <section class="case-question">
-    <h2>Research Questions This Platform Enables</h2>
+    <h2 id="research-questions-this-platform-enables">Research Questions This Platform Enables</h2>
     <ul>
       <li>How do pull odds and banner framing change spending acceleration and retention?</li>
       <li>Do bundle offers (e.g., 10-pull) create completion bias or perceived value effects?</li>
@@ -129,7 +122,7 @@
   </section>
 
   <section class="case-design">
-    <h2>Platform Capabilities</h2>
+    <h2 id="platform-capabilities">Platform Capabilities</h2>
 
     <div class="case-grid" style="display:grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap:16px;">
       <div class="case-card" style="padding:16px; border-radius:14px; border:1px solid var(--divider, rgba(0,0,0,0.08)); background: var(--card, #fff);">
@@ -143,7 +136,7 @@
       </div>
 
       <div class="case-card" style="padding:16px; border-radius:14px; border:1px solid var(--divider, rgba(0,0,0,0.08)); background: var(--card, #fff);">
-        <h3>Battle & Progression Loop</h3>
+        <h3>Battle &amp; Progression Loop</h3>
         <ul>
           <li>Players use summoned characters in battles</li>
           <li>Battle outcomes affect progression and resource needs</li>
@@ -172,7 +165,7 @@
   </section>
 
   <section class="case-methods">
-    <h2>Designed for Reuse & Reconfiguration</h2>
+    <h2 id="designed-for-reuse-reconfiguration">Designed for Reuse &amp; Reconfiguration</h2>
 
     <p>
       Modularity is a first-class feature. The platform separates content(character art, names, rarity sets)
@@ -193,7 +186,7 @@
   </section>
 
   <section class="case-findings">
-    <h2>Behavioral Telemetry</h2>
+    <h2 id="behavioral-telemetry">Behavioral Telemetry</h2>
 
     <p>
       The platform captures behavioral traces at the action level (summoning, spending, battles, and progression).
@@ -267,7 +260,7 @@
   </section>
 
   <section class="case-implications">
-    <h2>Why This Matters</h2>
+    <h2 id="why-this-matters">Why This Matters</h2>
     <p>
       Gacha economies are often tuned post-launch using observational analytics, which makes it hard to separate
       causality (what <em>causes</em> spending) from correlation (what <em>co-occurs</em> with spending).
@@ -279,7 +272,7 @@
   </section>
 
   <section class="case-conclusion">
-    <h2>Key Takeaway</h2>
+    <h2 id="key-takeaway">Key Takeaway</h2>
     <p>
       This project is a reusable testbed for studying how randomized reward systems shape behavior, built to be
       modular “to a fault,” so designers and researchers can swap assets, tune odds, change currency ratios,
@@ -288,79 +281,46 @@
 
     <p>
     View
-     <a href="https://github.com/Alice-Ji/Gacha" target="_blank">Github Repo</a>
-    &
-    <a href="https://alice-ji.github.io/Gacha/index.html" target="_blank">Prototype</a>.
+     <a href="https://github.com/Alice-Ji/Gacha" target="_blank" rel="noopener noreferrer">Github Repo</a>
+    &amp;
+    <a href="https://alice-ji.github.io/Gacha/index.html" target="_blank" rel="noopener noreferrer">Prototype</a>.
     </p>
   </section>
 
 </section>
-         
-
-
-      <section class="contact-section">
-        <a href="mailto:rji3@illinois.edu" class="contact-email"
-          >rji3@illinois.edu</a
-        >
+        <aside class="case-aside">
+          <nav aria-label="Case study sections">
+            <p class="eyebrow">On this page</p>
+            <ul><li><a href="#at-a-glance">At a Glance</a></li><li><a href="#what-this-is-and-isn-t">What This Is (and Isn’t)</a></li><li><a href="#research-questions-this-platform-enables">Research Questions This Platform Enables</a></li><li><a href="#platform-capabilities">Platform Capabilities</a></li><li><a href="#designed-for-reuse-reconfiguration">Designed for Reuse &amp; Reconfiguration</a></li><li><a href="#behavioral-telemetry">Behavioral Telemetry</a></li><li><a href="#why-this-matters">Why This Matters</a></li><li><a href="#key-takeaway">Key Takeaway</a></li></ul>
+          </nav>
+        </aside>
+      </div>
+      <div class="case-end"><a class="primary" href="../index.html#work">Explore more work</a><section class="contact-section">
+        <a href="mailto:rji3@illinois.edu" class="contact-email">rji3@illinois.edu</a>
         <div class="social-links">
-          <a
-            href="https://www.linkedin.com/in/alice-ji-8a4b2a161/"
-            target="_blank"
-          >
-            <img
-              src="https://alice-ji.github.io/portfolio/assets/LinkedIn.png"
-              alt="LinkedIn"
-              title="LinkedIn"
-            />
+          <a href="https://www.linkedin.com/in/alice-ji-8a4b2a161/" target="_blank" rel="noopener noreferrer">
+            <img src="../assets/LinkedIn.png" alt="LinkedIn" title="LinkedIn">
           </a>
-          <a
-            href="https://scholar.google.com/citations?hl=en&user=CVlgqCAAAAAJ"
-            target="_blank"
-          >
-            <img
-              src="https://alice-ji.github.io/portfolio/assets/GoogleScholarLogo.png"
-              alt="Google Scholar"
-              title="Google Scholar"
-            />
+          <a href="https://scholar.google.com/citations?hl=en&amp;user=CVlgqCAAAAAJ" target="_blank" rel="noopener noreferrer">
+            <img src="../assets/GoogleScholarLogo.png" alt="Google Scholar" title="Google Scholar">
           </a>
-          <a href="https://github.com/Alice-Ji" target="_blank">
-            <img
-              src="https://alice-ji.github.io/portfolio/assets/github.png"
-              alt="Github"
-              title="Github"
-            />
+          <a href="https://github.com/Alice-Ji" target="_blank" rel="noopener noreferrer">
+            <img src="../assets/github.png" alt="Github" title="Github">
           </a>
-          <a href="https://medium.com/@alice-ji" target="_blank">
-            <img
-              src="https://alice-ji.github.io/portfolio/assets/medium.png"
-              alt="Medium"
-              title="Medium"
-            />
-          <a href="https://madlabresearch.web.illinois.edu/" target="_blank">
-            <img
-              src="https://alice-ji.github.io/portfolio/assets/madlab.png"
-              alt="MadLab"
-              title="MadLab"
-            />
+          <a href="https://medium.com/@alice-ji" target="_blank" rel="noopener noreferrer">
+            <img src="../assets/medium.png" alt="Medium" title="Medium">
+          </a><a href="https://madlabresearch.web.illinois.edu/" target="_blank" rel="noopener noreferrer">
+            <img src="../assets/madlab.png" alt="MadLab" title="MadLab">
           </a>
         </div>
-      </section>
-    </main>
-
-    <footer>&copy; 2026 Alice Ji</footer>
-
-    <script>
-      const btn = document.getElementById("dark-toggle");
-      if (localStorage.getItem("dark-mode") === "true") {
-        document.body.classList.add("dark-mode");
-        btn.textContent = "☀️ Light Mode";
-      }
-      btn.onclick = () => {
-        document.body.classList.toggle("dark-mode");
-        const enabled = document.body.classList.contains("dark-mode");
-        btn.textContent = enabled ? "☀️ Light Mode" : "🌒 Dark Mode";
-        localStorage.setItem("dark-mode", enabled);
-      };
-    </script>
-  </body>
+      </section></div>
+    </div>
+  </main>
+  <footer class="site-footer wrap">
+    <span>© 2026 Alice Ji</span>
+    <a class="nav-button up-button" href="#top" aria-label="Back to top" title="Back to top">
+      <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m6 14 6-6 6 6"/></svg>
+    </a>
+  </footer>
+</body>
 </html>

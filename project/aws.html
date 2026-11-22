@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Alice Ji | Portfolio</title>
+  <link rel="icon" type="image/png" href="../assets/favicon.png">
+  <script src="../theme.js"></script>
+  <link rel="stylesheet" href="../styles.css">
+  <script src="../portfolio.js" defer></script>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="site-header wrap" id="top">
+    <a class="wordmark" href="../index.html"><img src="../assets/favicon.png" alt="" width="34" height="34"> Alice Ji</a>
+    <nav aria-label="Portfolio">
+      <a href="../index.html#work">Work</a>
+      <a class="resume-link" href="../resume.html">Résumé</a>
+      <button class="theme-toggle" type="button" role="switch" aria-label="Dark mode" aria-checked="false" hidden>
+        <span class="theme-thumb" aria-hidden="true">
+          <svg class="theme-sun" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" focusable="false">
+            <circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M2 12h2m16 0h2M5 5l1.5 1.5m11 11L19 19M19 5l-1.5 1.5m-11 11L5 19"/>
+          </svg>
+          <svg class="theme-moon" viewBox="0 0 24 24" width="16" height="16" fill="currentColor" focusable="false">
+            <path d="M20.5 15.1A9 9 0 0 1 8.9 3.5 9.1 9.1 0 1 0 20.5 15.1Z"/>
+          </svg>
+        </span>
+      </button>
+    </nav>
+  </header>
+  <main id="main">
+    <div class="wrap case-page">
+      <a class="nav-button back-button" href="../index.html#work">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m14 6-6 6 6 6"/></svg>
+        Back
+      </a>
+      <div class="case-layout">
+        <section class="case-study" aria-labelledby="case-title">
+  <header class="case-header">
+    <p class="eyebrow">Amazon Web Services · UXR internship</p>
+    <h1 id="case-title">Improving onboarding and adoption at AWS</h1>
+    <p class="subtitle">How can an internal enterprise tool help people get started with confidence and give them a reason to return?</p>
+    <figure class="case-cover">
+      <img src="../assets/aws-cover.png" width="1400" height="800" alt="AWS logo beside an illustrative enterprise onboarding checklist">
+      <figcaption>Illustration of an enterprise onboarding interface.</figcaption>
+    </figure>
+    <div class="case-meta">
+      <p><strong>Role:</strong> UX Research Intern</p>
+      <p><strong>Methods:</strong> Moderated usability testing, survey, interviews, prototyping</p>
+      <p><strong>Scope:</strong> First-use experience and continued use of an internal enterprise tool</p>
+      <p><strong>Partners:</strong> Product, Design, and Engineering</p>
+    </div>
+  </header>
+  <section class="case-glance">
+    <h2 id="at-a-glance">At a glance</h2>
+    <ul>
+      <li>Led two studies on how people got started and what shaped continued use.</li>
+      <li>Turned onboarding findings into prototypes and partnered with Engineering to bring improvements into the product.</li>
+      <li>Used a survey and follow-up interviews to help the team prioritize adoption work.</li>
+    </ul>
+  </section>
+  <section class="case-narrative">
+    <h2 id="the-research-challenge">The research challenge</h2>
+    <p>The team was building an internal tool and needed to make two decisions. Where should it improve the first-use experience? And what would make the tool useful enough for people to come back? I studied those questions in sequence because a usability session could show where people got stuck during setup, while understanding continued use required talking to users after they had tried the tool in their own work.</p>
+  </section>
+  <section class="case-methods">
+    <h2 id="study-1-getting-started">Study 1: Getting started</h2>
+    <p>In moderated think-aloud sessions, I watched people set up the tool and try representative tasks. I paid attention to moments of hesitation, the questions people asked, and what they expected to happen next.</p>
+    <p>People could complete setup with a moderator, yet still felt uncertain about the choices they had made. That distinction shaped my recommendations. I focused on where the experience needed to explain what a choice meant, when to give that guidance, and how to help people take the next step.</p>
+  </section>
+  <section class="case-findings">
+    <h2 id="finding-1-completing-setup-didn-t-mean-people-felt-ready">Finding 1: Completing Setup Didn’t Mean People Felt Ready</h2>
+    <p>I compared what participants did with what they expected to happen. Watching both made it possible to see uncertainty that a completion metric alone would miss.</p>
+    <figure class="aws-diagram aws-journey-map">
+      <figcaption><strong>Onboarding journey map</strong><span>Four stages from connecting sources to first use. User questions are paraphrased.</span></figcaption>
+      <ol class="aws-journey" role="list">
+        <li>
+          <h3>Connect sources</h3>
+          <dl>
+            <dt>What happens</dt><dd>Users choose which work sources to connect, one at a time.</dd>
+            <dt>Where users hesitated</dt><dd>Who can see what I add? Should I connect restricted content? Can I finish later?</dd>
+            <dt>Effort</dt><dd>Adding several sources takes time.</dd>
+          </dl>
+        </li>
+        <li>
+          <h3>Generate starter content</h3>
+          <dl>
+            <dt>What happens</dt><dd>AI uses the connected sources to create initial content for the workspace.</dd>
+          </dl>
+        </li>
+        <li>
+          <h3>Enable meeting summaries</h3>
+          <dl>
+            <dt>What happens</dt><dd>Users set up a feature that can transcribe and summarize meetings.</dd>
+            <dt>Where users hesitated</dt><dd>How does transcription work, and how does it become a summary?</dd>
+          </dl>
+        </li>
+        <li>
+          <h3>Start using the app</h3>
+          <dl>
+            <dt>What happens</dt><dd>Users enter the workspace and encounter unfamiliar terms with little explanation.</dd>
+            <dt>Where users hesitated</dt><dd>What do these terms mean, and what should I do first?</dd>
+          </dl>
+        </li>
+      </ol>
+    </figure>
+    <p><strong>What this changed:</strong> I separated problems that could block setup from problems that made it harder to use the tool afterward. That helped the team decide where to clarify a choice in the moment and where to offer guidance after setup.</p>
+  </section>
+  <section class="case-methods">
+    <h2 id="study-2-what-brought-people-back">Study 2: What brought people back</h2>
+    <p>I used a survey to identify patterns in perceived value and followed up with interviews with people who kept using the tool and people who had stopped. Comparing those groups helped me distinguish early interest from the practical reasons someone would make the tool part of their routine.</p>
+    <p>Continued use depended partly on how well the tool fit into existing workflows and how much extra effort it took to get value from it. I translated those findings into recommendations the team could weigh against onboarding fixes and other product priorities.</p>
+  </section>
+  <section class="case-findings">
+    <h2 id="finding-2-continued-use-depended-on-fit-with-existing-work">Finding 2: Continued Use Depended on Fit With Existing Work</h2>
+    <p>The survey helped me see which goals users had and where they felt the tool made their work easier. In interviews, I asked people to walk through a recent use, what prompted it, and what they used when they didn’t reach for the tool. I coded the interviews against the same themes and compared people who stayed with the tool with those who drifted away.</p>
+    <figure class="aws-diagram">
+      <figcaption><strong>Four patterns of team adoption</strong><span>Anonymized patterns synthesized from interviews. The cards describe different ways people used the tool.</span></figcaption>
+      <ul class="aws-personas">
+        <li>
+          <div class="aws-persona-heading">
+            <svg viewbox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M20 7h-8a5 5 0 0 0-5 5v1m13-6-3-3m3 3-3 3M4 17h8a5 5 0 0 0 5-5v-1m-13 6 3 3m-3-3 3-3"></path></svg>
+          </div>
+          <h3>Single-workflow team</h3><p>The tool earns a place in one recurring task.</p><p><strong>Design implication</strong> Make that task easy to repeat.</p></li>
+        <li>
+          <div class="aws-persona-heading">
+            <svg viewbox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="9" cy="8" r="3"></circle><path d="M3 20v-2a6 6 0 0 1 12 0v2m3-15v6m-3-3h6"></path></svg>
+          </div>
+          <h3>Champion-led team</h3><p>One person does much of the work to keep the team using the tool.</p><p><strong>Design implication</strong> Reduce manual upkeep so the tool stays manageable even when one person does all the work to keep it running.</p></li>
+        <li class="aws-persona-goal">
+          <div class="aws-persona-heading">
+            <svg viewbox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="3" y="4" width="6" height="6" rx="1"></rect><rect x="15" y="14" width="6" height="6" rx="1"></rect><path d="M6 10v4a3 3 0 0 0 3 3h6m-5-10h7m-2-2 2 2-2 2"></path></svg><span class="aws-persona-badge">Product goal</span>
+          </div>
+          <h3>Workflow-embedded team</h3><p>The tool becomes part of the team’s regular work.</p><p><strong>Design implication</strong> Make the tool easy to use within existing routines so teams can get value without creating extra work.</p></li>
+        <li>
+          <div class="aws-persona-heading">
+            <svg viewbox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="12" cy="7" r="3"></circle><path d="M5 20v-1a7 7 0 0 1 14 0v1"></path></svg>
+          </div>
+          <h3>Solo adopter</h3><p>An individual tries the tool while broader team use remains limited.</p><p><strong>Design implication</strong> Make the first useful outcome clear for one person.</p></li>
+      </ul>
+    </figure>
+    <p>The comparison helped me recommend two priorities: reduce the effort needed to get recurring value and support users within their existing workflows.</p>
+  </section>
+  <section class="case-narrative">
+    <h2 id="from-findings-to-product-decisions">From findings to product decisions</h2>
+    <p>I paired onboarding recommendations with prototypes so Product, Design, and Engineering could review where guidance would appear and what it would say.</p>
+    <figure class="aws-diagram">
+      <figcaption><strong>How the research changed the product</strong><span>What I contributed and what the team did with it.</span></figcaption>
+      <div class="aws-impact">
+        <div><h3>Onboarding</h3><dl>
+          <div><dt>Evidence</dt><dd>People completed setup with questions about their choices and next steps.</dd></div>
+          <div><dt>My contribution</dt><dd>Prototyped recommendations, wrote tour copy, and proposed answers to recurring setup questions.</dd></div>
+          <div><dt>Shipped</dt><dd>Engineering built the guided tour, and the team adapted my proposal into a linked help resource.</dd></div>
+        </dl></div>
+        <div><h3>Adoption</h3><dl>
+          <div><dt>Evidence</dt><dd>Continued use was easier when the tool fit an existing routine.</dd></div>
+          <div><dt>My contribution</dt><dd>Synthesized survey and interview findings into recommendations for reducing recurring effort.</dd></div>
+          <div><dt>Informed priorities</dt><dd>Product and Engineering used the evidence to prioritize follow-up work.</dd></div>
+        </dl></div>
+      </div>
+    </figure>
+  </section>
+  <section class="case-conclusion">
+    <h2 id="outcome">Outcome</h2>
+    <p>The next question I would test is whether the updated onboarding helps people complete a meaningful task on their own and whether they return for that task later. That would connect the changes we shipped to the behavior the team ultimately wanted to support.</p>
+  </section>
+</section>
+        <aside class="case-aside">
+          <nav aria-label="Case study sections">
+            <p class="eyebrow">On this page</p>
+            <ul><li><a href="#at-a-glance">At a glance</a></li><li><a href="#the-research-challenge">The research challenge</a></li><li><a href="#study-1-getting-started">Study 1: Getting started</a></li><li><a href="#finding-1-completing-setup-didn-t-mean-people-felt-ready">Finding 1: Completing Setup Didn’t Mean People Felt Ready</a></li><li><a href="#study-2-what-brought-people-back">Study 2: What brought people back</a></li><li><a href="#finding-2-continued-use-depended-on-fit-with-existing-work">Finding 2: Continued Use Depended on Fit With Existing Work</a></li><li><a href="#from-findings-to-product-decisions">From findings to product decisions</a></li><li><a href="#outcome">Outcome</a></li></ul>
+          </nav>
+        </aside>
+      </div>
+      <div class="case-end"><a class="primary" href="../index.html#work">Explore more work</a></div>
+    </div>
+  </main>
+  <footer class="site-footer wrap">
+    <span>© 2026 Alice Ji</span>
+    <a class="nav-button up-button" href="#top" aria-label="Back to top" title="Back to top">
+      <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m6 14 6-6 6 6"/></svg>
+    </a>
+  </footer>
+</body>
+</html>
