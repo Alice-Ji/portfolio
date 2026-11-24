@@ -260,7 +260,13 @@ button { font: inherit; cursor: pointer; }
 }
 .footer-links img { width: 24px; height: 24px; object-fit: contain; }
 .footer-links a:hover { border-color: #2453aa; }
-[data-theme="dark"] .footer-links a { color: #2453aa; }
+[data-theme="dark"] .footer-links a {
+  color: var(--ink);
+  background: var(--panel);
+}
+[data-theme="dark"] .footer-links img {
+  filter: grayscale(1) invert(1);
+}
 @media (prefers-reduced-motion: no-preference) {
   .footer-links a { transition: transform .2s ease, border-color .2s ease; }
   .footer-links a:active { transform: scale(.94); }
